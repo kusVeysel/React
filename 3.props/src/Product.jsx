@@ -7,8 +7,8 @@ function Product(props) { // 3.kullanım parametre olarak direk "{productName,pr
             <div>Ürün Bilgileri</div>
             <hr />
             <div>
-                <p>İsim: {productName}</p> {/* Distraktsız:  props.productName */}
-                <p>Fiyat: {price}</p> {/* Distraktsız: props.price */}
+                <p>İsim: {productName}</p> {/* Destructsız:  props.productName */}
+                <p>Fiyat: {price}</p> {/* Destructsız: props.price */}
             </div>
 
         </>
