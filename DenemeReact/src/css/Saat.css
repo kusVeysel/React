@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.saat {
+    position: relative;
+    width: 350px;
+    height: 150px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(173, 60, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    background-color: rgb(94, 83, 83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve {
+    position: absolute;
+}
+
+.one {
+    left: 64%;
+    top: 6%;
+}
+
+.two {
+    left: 74%;
+    top: 16%;
+}
+
+.three {
+    left: 79%;
+    top: 30%;
+}
+
+.four {
+    top: 42%;
+    left: 74%;
+}
+
+.five {
+    left: 64%;
+    top: 52%;
+}
+
+.six {
+    left: 47%;
+    bottom: 1.5%;
+}
+
+.seven {
+    right: 65%;
+    top: 52%;
+}
+
+.eight {
+    right: 74%;
+    top: 42%;
+}
+
+.nine {
+    right: 77%;
+    ;
+    top: 30%;
+}
+
+.ten {
+    right: 74%;
+    top: 16%;
+}
+
+.eleven {
+    top: 6%;
+    right: 63%;
+}
+
+.twelve {
+    left: 47%;
+    top: 1.5%;
+}
+
+.nokta {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    left: 43%;
+    top: 44%;
+}
+.digital{
+    width: 70%;
+    height: 40%;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 7px black;
+    display: flex;
+    justify-content: center;
+}
