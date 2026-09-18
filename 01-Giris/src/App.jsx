@@ -5,7 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  // javascript kodları yazılır
+  // javascript kodları buraya yazılır
 
   let name = "veysel";
   let yas = 18;

@@ -3,13 +3,13 @@ import './App.css'
 import axios from 'axios'
 import { useEffect } from 'react';
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "http://localhost:3005";
 
 function App() {
 
   const getAllUsers = async () => {
     const response = await axios.get(BASE_URL + "/users");
-    // await: yazılan kodlar çalışmadan buranın bitmesi gerekir , bunun çalışması bitti(10.satır) devam et(11.satıra) demektir
+    // await: yazılan kodlar çalışmadan buranın bitmesi gerekir , bunun çalışması bitti devam et(sonraki satıra geç) demektir
     console.log(response.data)
   }
 
@@ -32,4 +32,8 @@ function App() {
 }
 
 export default App
-// npx json-server --watch .\src\db.json
+//? Json Server Kurulumu
+//* Terminali aç → npm install json-server ile kur
+//* Serveri çalıştır → npx json-server --watch .\src\db.json --port 3005 
+//* http://localhost:3005/users → tüm kullanıcıları getir
+//* http://localhost:3005/users/2 → ID'si 2 olan  kullanıcıyı getir
