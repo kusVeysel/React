@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header bileşeninin dış kapsayıcı stil tanımlamaları */
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(51, 54, 54);
+    display: flex;
+    align-items: center; /* Linkleri dikeyde ortalamak için eklendi */
+    flex-direction: row;
+}
+
+/* Link bileşenlerine uygulanan stil tanımlamaları */
+.link {
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    margin: 0 12px;
+    color: #fff;
+}

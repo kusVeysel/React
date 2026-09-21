@@ -119,3 +119,9 @@ function App() {
 // App component'ini başka dosyalarda kullanabilmek için
 // default olarak export ediyoruz.
 export default App
+
+//? Redux DevTools
+//* googleye git → redux devtools yaz → chrome web store → Chrome'a ekle → alt alta 3 noktaya bas → uzantılar → redux devtools ayrıntılar → araç çubuğuna sabitle aç → sağ üste sabitlenecek
+// redux kullandığınız projeyi çalıştırıp sabitlenen ikona basarak test edebilirsiniz
+
+//? Redux DevTools, Redux kullanan uygulamalarda durum (state) yönetimini izlemek, hata ayıklamak (debug) ve uygulamanın nasıl çalıştığını analiz etmek için kullanılan bir geliştirici aracıdır.
