@@ -1,64 +1,44 @@
-// React içerisinden useState hook'u kullanılmadığı için import etmiyoruz.
-// Eğer component içerisinde local state kullanacak olsaydık useState import edebilirdik.
 import './App.css'
-
-// UserList component'ini import ediyoruz.
-// Bu component kullanıcı listesini ekrana basacak.
+//* UserList component'ini import ediyoruz.Bu component kullanıcı listesini ekrana basacak
 import UserList from './UserList'
-
-// React Redux kütüphanesinden iki hook import ediyoruz.
-// useSelector -> Redux Store içerisindeki state'i okumak için kullanılır.
-// useDispatch -> Redux Store'a action göndermek için kullanılır.
+//* React Redux kütüphanesinden iki hook import ediyoruz
+//* useSelector → Redux Store içerisindeki state'i okumak için kullanılır
+//* useDispatch → Redux Store'a action göndermek için kullanılır
 import { useSelector, useDispatch } from 'react-redux'
-
-// CounterSlice içerisinden oluşturduğumuz action'ları import ediyoruz.
-// increment -> sayacı 1 artırır.
-// decrement -> sayacı 1 azaltır.
+//* CounterSlice içerisinden oluşturduğumuz action'ları import ediyoruz
+//* increment → sayacı 1 arttıran fonksiyon
+//* decrement → sayacı 1 azaltan fonksiyon
 import { increment, decrement } from './redux/CounterSlice'
 
 
-// App ana component'idir.
-// Uygulamanın ana ekranındaki yapılar burada oluşturulur.
+//* App ana component'idir.Uygulamanın ana ekranındaki yapılar burada oluşturulur
 function App() {
-
-  // useDispatch() Redux Store'a action göndermemizi sağlayan dispatch fonksiyonunu verir.
-  //
-  // Örneğin:
-  // dispatch(increment())
-  //
-  // Burada increment() bir action oluşturur,
-  // dispatch() ise oluşturulan action'ı Redux Store'a gönderir.
+  
+  //* useDispatch() Redux Store'a action göndermemizi sağlayan dispatch fonksiyonunu verir
+  //* Örneğin: dispatch(increment())
+  //* Burada increment() bir action oluşturur, dispatch() ise oluşturulan action'ı Redux Store'a gönderir
   const dispatch = useDispatch()
 
+  
+  //* useSelector() Redux Store içerisindeki state'i okumak için kullanılır
+  //* store → Redux Store'un tamamıdır
+  //* store.counter → Store içerisinde "counter" adıyla tanımladığımız bölümdür
 
-  // useSelector() Redux Store içerisindeki state'i okumak için kullanılır.
-  //
-  // store -> Redux Store'un tamamıdır.
-  // store.counter -> Store içerisinde "counter" adıyla tanımladığımız bölümdür.
-  //
-  // Store.jsx içerisindeki:
-  //
+  const state = useSelector((store) => store.counter)
+  //! CounterSlice içindeki tanımından dolayı burada store.counter kullanabiliyoruz
+
+  //  Store.jsx içerisindeki:
   // reducer: {
   //   counter: counterReducer
   // }
-  //
-  // tanımından dolayı burada store.counter kullanabiliyoruz.
-  const state = useSelector((store) => store.counter)
+  
 
-
-  // Component'in ekrana basacağı JSX yapısı return ile döndürülür.
   return (
     <>
       {/* 
-        Redux Store içerisindeki counter state'inin value değerini gösteriyoruz.
+        Redux Store içerisindeki counter state'inin value değerini gösteriyoruz
 
-        CounterSlice içerisindeki başlangıç state'i:
-
-        {
-          value: 0
-        }
-
-        olduğu için başlangıçta ekranda 0 görünür.
+        CounterSlice içerisindeki başlangıç state'i: value: 0 olduğu için başlangıçta ekranda 0 görünür
       */}
       <h4>{state.value}</h4>
 
@@ -66,33 +46,30 @@ function App() {
       <div>
 
         {/*
-          Butona tıklandığında increment() action'ı oluşturulur.
+          Butona tıklandığında increment() action'ı oluşturulur
 
-          increment()
-          -> Action oluşturur.
+          increment() → Action oluşturur
 
-          dispatch(increment())
-          -> Oluşturulan action'ı Redux Store'a gönderir.
+          dispatch(increment()) → Oluşturulan action'ı Redux Store'a gönderir
 
-          Redux daha sonra CounterSlice içerisindeki
-          increment reducer'ını çalıştırır.
+          Redux daha sonra CounterSlice içerisindeki increment reducer'ını çalıştırır
         */}
+
         <button onClick={() => dispatch(increment())}>
           Arttır
         </button>
 
 
         {/*
-          Aynı mantık decrement için de geçerlidir.
+          Aynı mantık decrement için de geçerlidir
 
-          decrement()
-          -> azaltma action'ı oluşturur.
+          decrement() → azaltma action'ı oluşturur
 
-          dispatch(decrement())
-          -> Action Redux Store'a gönderilir.
+          dispatch(decrement()) → Action Redux Store'a gönderilir
 
-          CounterSlice içerisindeki decrement reducer'ı çalışır.
+          CounterSlice içerisindeki decrement reducer'ı çalışır
         */}
+
         <button onClick={() => dispatch(decrement())}>
           Azalt
         </button>
@@ -101,7 +78,7 @@ function App() {
 
 
       {/*
-        UserList component'ini çağırıyoruz.
+        UserList component'ini çağırıyoruz
 
         UserList component'i:
         1. Redux Store'dan kullanıcıları alır.
@@ -124,4 +101,4 @@ export default App
 //* googleye git → redux devtools yaz → chrome web store → Chrome'a ekle → alt alta 3 noktaya bas → uzantılar → redux devtools ayrıntılar → araç çubuğuna sabitle aç → sağ üste sabitlenecek
 // redux kullandığınız projeyi çalıştırıp sabitlenen ikona basarak test edebilirsiniz
 
-//? Redux DevTools, Redux kullanan uygulamalarda durum (state) yönetimini izlemek, hata ayıklamak (debug) ve uygulamanın nasıl çalıştığını analiz etmek için kullanılan bir geliştirici aracıdır.
+//? Redux DevTools, Redux kullanan uygulamalarda durum (state) yönetimini izlemek, hata ayıklamak (debug) ve uygulamanın nasıl çalıştığını analiz etmek için kullanılan bir geliştirici aracıdır
