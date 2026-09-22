@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import User from './User' 
 //* React Redux içerisinden iki hook import ediyoruz.
 //* useDispatch → Redux Store'a action göndermek için kullanılır.
 //* useSelector → Redux Store içerisindeki state'i okumak için kullanılır.
@@ -6,8 +7,6 @@ import { useDispatch, useSelector } from 'react-redux'
 //* UserSlice içerisinden createAsyncThunk ile oluşturduğumuz getAllUsers fonksiyonunu import ediyoruz.
 //* Bu fonksiyon API isteğini gerçekleştirecek async action'dır.
 import { getAllUsers } from './redux/UserSlice'
-//* Her bir kullanıcıyı gösterecek olan User component'ini import ediyoruz.
-import User from './User'
 
 //* Kullanıcı listesinden sorumlu component
 function UserList() {

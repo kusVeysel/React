@@ -5,17 +5,10 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 //* HTTP istekleri gerçekleştirmek için axios kütüphanesini import ediyoruz.
 import axios from 'axios'
 
-// UserSlice'ın başlangıç state'i
-// Redux Store'da user bölümünün başlangıç yapısı:
-// {
-//   users: [],
-//   loading: false
-// }
 const initialState = {
-    // API'den gelecek kullanıcılar burada tutulacak
-    // Başlangıçta henüz kullanıcı olmadığı için boş array kullanıyoruz
+    // API'den gelecek kullanıcılar burada tutulacak. Başlangıçta henüz kullanıcı olmadığı için boş array kullanıyoruz.
     users: [],
-    // API isteğinin devam edip etmediğini takip eder
+    // API isteğinin devam edip etmediğini takip eder:
     // false → istek devam etmiyor
     // true  → istek devam ediyor
     loading: false,
@@ -23,10 +16,10 @@ const initialState = {
     error: null
 }
 
-// createAsyncThunk(): API gibi asynchronous işlemleri Redux ile yönetmek için kullanılır
+// createAsyncThunk(): API gibi asynchronous işlemleri Redux ile yönetmek için kullanılır.
 // İlk parametre action'ın type prefix'idir.
 
-// 'users/getAllUsers'
+// 'users/getAllUsers':
 // → users: hangi alan/modül?
 // → getAllUsers: hangi işlem?
 
@@ -39,22 +32,27 @@ export const getAllUsers = createAsyncThunk('users/getAllUsers', async () => {
     // Buradaki return değeri createAsyncThunk tarafından fulfilled action'ının payload'ı haline gelir
     return response.data
 })
+// createAsyncThunk(): Redux Toolkit'te asenkron işlemleri (API istekleri vb.) yürütmek ve bunların pending, fulfilled, rejected durumlarını otomatik üreten action creator'lar oluşturmaya yarar.
 
 // createSlice() Redux state'ini, reducer'larını ve action'larını daha düzenli şekilde oluşturmamızı sağlar
 export const userSlice = createSlice({
 
-    // Slice'ın adı
-    // Redux action type'larının oluşturulmasında kullanılır
+    // Slice'ın adı.
+    // Redux action type'larının oluşturulmasında kullanılır.
     name: "user",
-    // Slice'ın başlangıç state'i
-    // Yukarıda oluşturduğumuz initialState'i kullanıyoruz
+
+    // Slice'ın başlangıç state'i.
+    // Yukarıda oluşturduğumuz initialState'i kullanıyoruz.
+    //! yukarıda oluşturduğum initialState verdiğim isim bunla aynı olduğu için initialState: "initialState", yazmaya gerek yok.
     initialState,
-    // Normal synchronous reducer'lar burada bulunur
+
+    // Normal synchronous reducer'lar burada bulunur.
     // Örneğin: users'a manuel olarak kullanıcı eklemek, kullanıcı silmek, kullanıcı düzenlemek gibi işlemler burada olabilir.
     // Şu anda normal reducer kullanmadığımız için boş bırakıyoruz.
     reducers: {
 
     }, //! Slice’ın iç (senkron) eylemleri
+
     // Slice'ın kendi reducers bölümünde tanımlanmayan başka action'lara cevap vermek için kullanılır.
     // createAsyncThunk tarafından otomatik oluşturulan:
     // pending → Beklemede
@@ -95,6 +93,7 @@ export const userSlice = createSlice({
                 state.error = action.error.message
             }
         )
+        //* addCase(): extraReducers içinde spesifik bir eylemi (action) hedefleyip o eylem gerçekleştiğinde state'in nasıl değişeceğini tanımlamaya yarar.
     } //! Slice’ın dış (asenkron/Thunk) eylemleri
 })
 
@@ -102,7 +101,6 @@ export const userSlice = createSlice({
 
 // Eğer reducers içerisinde örneğin: addUser: (state, action) => { ... } olsaydı: export const { addUser } = userSlice.actions şeklinde dışarı aktarabilirdik
 export const { } = userSlice.actions
-
 
 // Slice'ın reducer'ını default olarak dışarı aktarıyoruz
 // Store.jsx içerisinde: import userReducer from './UserSlice' şeklinde import edilecek.
