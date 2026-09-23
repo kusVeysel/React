@@ -1,110 +1,45 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-
 import productsData from '../data/products.json'
 import Product from '../components/Product'
 
 function ProductDetails() {
-
-  /*
-    useParams():
-
-    Route içerisinde:
-
-    /product-details/:id
-
-    şeklinde tanımladığımız :id değerini yakalar.
-
-    Örneğin URL:
-
-    /product-details/2
-
-    ise:
-
-    id = "2"
+  /* 
+    useParams(): URL'deki dinamik parametreyi yakalar (:id).
+    Örn: /product-details/2 -> id = "2"
   */
   const { id } = useParams()
 
-  /*
-    Detay sayfasından tekrar ürünler sayfasına
-    dönebilmek için useNavigate kullanıyoruz.
+  /* 
+    useNavigate(): Sayfalar arası programatik yönlendirme sağlar.
   */
   const navigate = useNavigate()
 
-  /*
-    JSON içerisindeki ürünleri dolaşıyoruz.
-
-    URL'den gelen id ile ürünün id'sini karşılaştırıyoruz.
-
-    Örneğin:
-
-    URL:
-    /product-details/2
-
-    id:
-    "2"
-
-    JSON:
-    {
-      "id": "2",
-      "name": "Telefon",
-      "price": "20.000"
-    }
-
-    eşleştiğinde bu ürün currentProduct değişkenine atanır.
+  /* 
+    URL'den gelen `id` string tipindedir. 
+    Eğer JSON verisindeki `id` sayısı (number) tipindeyse eşleşme türü uyuşmalıdır. 
+    Bu yüzden `String(item.id) === id` veya loose equality `item.id == id` kontrolü güvenlidir.
   */
   const currentProduct = productsData.find(
-    (item) => item.id === id
+    (item) => String(item.id) === String(id)
   )
 
   return (
     <div style={{ padding: '20px' }}>
-
       <h1>Ürün Detayları</h1>
 
-      {/*
-        navigate():
-
-        Kullanıcı butona bastığında
-        /products Route'una gider.
-      */}
-      <button
-        onClick={() => navigate('/products')}
-      >
+      {/* Tıklandığında kullanıcıyı /products rotasına geri yönlendirir. */}
+      <button onClick={() => navigate('/products')}>
         ← Ürünlere Geri Dön
       </button>
 
       <hr />
 
-      {/*
-        currentProduct varsa ürün bulundu demektir.
-
-        Ürün bulunduysa Product component'ini
-        tekrar kullanıyoruz.
-
-        showButton={false} diyerek
-        detay sayfasındaki "Detayına Git"
-        butonunu gizliyoruz.
+      {/* 
+        Ürün bulunduysa Product bileşeni render edilir. 
+        showButton={false} ile detay sayfasında tekrar yönlendirme butonu çıkması engellenir.
       */}
-      {currentProduct ? (
-
-        <Product
-          product={currentProduct}
-          showButton={false}
-        />
-
-      ) : (
-
-        /*
-          find() hiçbir ürün bulamazsa
-          currentProduct undefined olur.
-
-          Bu durumda kullanıcıya hata mesajı gösteriyoruz.
-        */
-        <h2>Ürün Bulunamadı!</h2>
-
-      )}
-
+      {currentProduct ? (<Product product={currentProduct} showButton={false} />) : (<h2>Ürün Bulunamadı!</h2>)}
     </div>
   )
 }

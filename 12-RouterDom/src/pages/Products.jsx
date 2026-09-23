@@ -11,9 +11,7 @@ function Products() {
       {/* 
         productsData içerisindeki bütün ürünleri dolaşıyoruz.
 
-        map():
-        Array içerisindeki her eleman için yeni bir JSX
-        yapısı oluşturur.
+        map(): Array içerisindeki her eleman için yeni bir JSX yapısı oluşturur.
 
         Örneğin:
 
@@ -26,18 +24,12 @@ function Products() {
         /*
           Product component'ine mevcut ürünü gönderiyoruz.
 
-          product={product}
-          → Ürünün tamamını Product component'ine gönderir.
+          product={product} → Ürünün tamamını Product component'ine gönderir.
 
-          key={product.id}
-          → React'in listedeki elemanları birbirinden ayırt
-            edebilmesi için kullanılır.
+          key={product.id} → React'in listedeki elemanları birbirinden ayırt edebilmesi için kullanılır.
         */
         return (
-          <Product
-            product={product}
-            key={product.id}
-          />
+          <Product product={product} key={product.id} />
         )
       })}
 

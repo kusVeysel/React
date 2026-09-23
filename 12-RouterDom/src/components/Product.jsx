@@ -25,16 +25,9 @@ function Product({ product, showButton = true }) {
   /*
     useNavigate():
 
-    React Router içerisinde JavaScript kullanarak
-    başka bir Route'a geçmemizi sağlar.
+    React Router içerisinde JavaScript kullanarak başka bir Route'a geçmemizi sağlar.
 
-    Örneğin:
-
-    navigate("/products")
-
-    veya:
-
-    navigate("/product-details/1")
+    Örneğin: navigate("/products") veya: navigate("/product-details/1")
   */
   const navigate = useNavigate()
 
@@ -47,14 +40,7 @@ function Product({ product, showButton = true }) {
 
     showButton → true olur.
 
-    Detay sayfasında ise:
-
-    <Product
-      product={currentProduct}
-      showButton={false}
-    />
-
-    diyerek butonu gizliyoruz.
+    Detay sayfasında ise: <Product product={currentProduct} showButton={false} /> diyerek butonu gizliyoruz.
   */
   return (
     <div
@@ -83,17 +69,10 @@ function Product({ product, showButton = true }) {
             /*
               Tıklanan ürünün id değerini URL'ye ekliyoruz.
 
-              Örneğin:
-
-              id = "1"
-
-              oluşacak URL:
-
-              /product-details/1
+              Örneğin: id = "1" oluşacak URL: /product-details/1
             */
             navigate(`/product-details/${id}`)
-          }}
-        >
+          }}>
           Detayına Git
         </button>
       )}

@@ -1,7 +1,6 @@
 import React from 'react'
 
-// Tanımlanmamış veya geçersiz rotalara girildiğinde 
-// (Route path='*' ile yakalanarak) gösterilecek sayfa bileşeni.
+//* Tanımlanmamış veya geçersiz rotalara girildiğinde (Route path='*' ile yakalanarak) gösterilecek sayfa bileşeni.
 function NotFoundPage() {
   return (
     <div>

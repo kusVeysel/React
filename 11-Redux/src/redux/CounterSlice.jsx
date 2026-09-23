@@ -18,6 +18,7 @@ export const counterSlice = createSlice({
 
   // Slice'ın başlangıç state'idir.
   // Burada yukarıda oluşturduğumuz initialState'i kullanıyoruz.
+  //! yukarıda oluşturduğum initialState verdiğim isim bunla aynı olduğu için initialState: "initialState", yazmaya gerek yok.
   initialState,
 
 
@@ -37,7 +38,7 @@ export const counterSlice = createSlice({
       // Sayaç değerini 1 azaltıyoruz.
       state.value -= 1
     }
-  }
+  } //! Slice’ın iç (senkron) eylemleri
 })
 
 // createSlice tarafından otomatik oluşturulan action creator'ları dışarı aktarıyoruz.
