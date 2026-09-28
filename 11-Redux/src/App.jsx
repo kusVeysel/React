@@ -102,3 +102,6 @@ export default App
 // redux kullandığınız projeyi çalıştırıp sabitlenen ikona basarak test edebilirsiniz
 
 //? Redux DevTools, Redux kullanan uygulamalarda durum (state) yönetimini izlemek, hata ayıklamak (debug) ve uygulamanın nasıl çalıştığını analiz etmek için kullanılan bir geliştirici aracıdır
+
+//* Terminali aç → npm install @reduxjs/toolkit react-redux
+//* Site → https://redux-toolkit.js.org/tutorials/quick-start

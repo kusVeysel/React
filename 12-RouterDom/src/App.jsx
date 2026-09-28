@@ -87,3 +87,6 @@ function App() {
 }
 
 export default App
+
+//* Terminali aç → npm i react-router-dom
+//* Site → https://www.npmjs.com/package/react-router-dom
