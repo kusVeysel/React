@@ -12,3 +12,5 @@ function App() {
 }
 
 export default App
+
+//* Site → https://react-icons.github.io/react-icons/
