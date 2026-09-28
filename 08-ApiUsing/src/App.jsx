@@ -100,8 +100,9 @@ function App() {
 
 export default App;
 
-//? Json Server Kurulumu
+//* npm install axios
 
+//? Json Server Kurulumu
 //* Terminali aç → npm install json-server ile kur
 //* Serveri çalıştır → npx json-server --watch .\src\db.json --port 3005
 // json dosyasında "json.schemaDownload.enable" ile ilgili hata oluyorsa  → npm install json-server@0.17.4
