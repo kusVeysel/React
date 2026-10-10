@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+    font-family: 'DM Sans', sans-serif;
+    color: #22251f;
+    background: #f8f8f5;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    --surface: #fff;
+    --text: #22251f;
+    --muted: #74776f;
+    --line: #e9e9e3;
+    --accent: #54735a;
+}
+
+:root[data-theme='dark'] {
+    color-scheme: dark;
+    color: #f2f1eb;
+    background: #171a17;
+    --surface: #222722;
+    --text: #f2f1eb;
+    --muted: #b0b5ad;
+    --line: #383e38;
+    --accent: #a0c5a6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: inherit;
+    color: var(--text);
+    transition: background .2s ease, color .2s ease;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    color: inherit;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
