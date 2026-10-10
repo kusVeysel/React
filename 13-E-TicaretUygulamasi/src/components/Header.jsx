@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import '../css/Header.css'
 import { CiShoppingBasket, CiLight } from 'react-icons/ci'
 import { FaMoon } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'

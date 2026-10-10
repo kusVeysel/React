@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #202820;
+  background: #f3f6f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --green: #3f7554;
+  --muted: #788179;
+  --line: #e5ebe4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 56px 20px;
+  background:
+    radial-gradient(ellipse at 50% 0%, #e4efe5 0, transparent 48%),
+    #f3f6f2;
+}
+
+#root {
+  width: min(100%, 520px);
+  margin: 0 auto;
+}
+
+.todo-create {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 12px 34px #273b2b0d;
+}
+
+.todo-input {
+  min-width: 0;
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  outline: none;
+  background: #fafcf9;
+  color: #202820;
+  font: inherit;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.todo-input::placeholder {
+  color: #9aa39b;
+}
+
+.todo-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px #3f75541c;
+}
+
+.todo-create-button {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--green);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.todo-create-button:hover {
+  transform: translateY(-1px);
+  background: #315f43;
+}
+
+.todo-create + div {
+  margin-top: 14px;
+  padding: 8px 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 12px 34px #273b2b0d;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 28px 14px;
+  }
+
+  .todo-create {
+    gap: 8px;
+    padding: 14px;
+  }
+
+  .todo-create-button {
+    padding: 0 13px;
+  }
+}

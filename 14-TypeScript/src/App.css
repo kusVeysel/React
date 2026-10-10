@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: blue;
+}
+
+.hover-yazi {
+  background: linear-gradient(to right, #007bff 50%, rgb(94, 94, 94) 50%);
+
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: background-position 0.5s ease-in-out;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 0;
+  }
+
+  50% {
+    background-position: 0 0;
+  }
+}
+
+.hover-yazi:hover {
+  background-position: 0 0;
+}

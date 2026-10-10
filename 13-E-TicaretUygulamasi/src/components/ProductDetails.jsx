@@ -12,7 +12,7 @@ function ProductDetails() {
     const navigate = useNavigate()
     const { products, loading, error } = useSelector(store => store.product)
     const product = products.find(item => String(item.id) === id)
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(0)
 
     useEffect(() => { if (!products.length) dispatch(getAllProducts()) }, [dispatch, products.length])
 
@@ -39,7 +39,7 @@ function ProductDetails() {
                 <p className="price">{product.price.toLocaleString('tr-TR', { style: 'currency', currency: 'TRY' })}</p>
 
                 <div className="quantity-control" aria-label="Adet seçimi">
-                    <button aria-label="Adedi azalt" onClick={() => setCount(value => Math.max(1, value - 1))}><CiCircleMinus /></button>
+                    <button aria-label="Adedi azalt" onClick={() => setCount(value => Math.max(0, value - 1))}><CiCircleMinus /></button>
                     <span>{count}</span>
                     <button aria-label="Adedi artır" onClick={() => setCount(value => value + 1)}><CiCirclePlus /></button>
                 </div>

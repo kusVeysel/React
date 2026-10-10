@@ -1,0 +1,38 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0;
+  padding: 16px 4px;
+  border-bottom: 1px solid #e9eee8;
+  color: #303a31;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.todo:last-child {
+  border-bottom: 0;
+}
+
+.todo > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #89938a;
+}
+
+.icons {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color .18s ease, transform .18s ease;
+}
+
+.icons:hover {
+  transform: translateY(-1px);
+  color: #3f7554;
+}
+
+.icons:first-child:hover {
+  color: #c45b52;
+}
