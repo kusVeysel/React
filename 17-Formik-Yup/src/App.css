@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+}
+
+form {
+    width: 500px;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(22, 22, 22);
+    border-bottom: 1px solid grey;
+    outline: none;
+    color: #fff;
+}
+
+.inputDiv {
+    margin: 30px 0;
+}
+
+.saveButton {
+    width: 100%;
+    padding: 7px;
+    background: gold;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+.inputDiv div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.input-error {
+    font-size: 15px;
+    color: rgb(188, 73, 73);
+}
