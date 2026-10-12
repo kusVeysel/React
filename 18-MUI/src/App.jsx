@@ -1,5 +1,7 @@
 import './App.css'
 import MUIbutton from './components/MUIbutton'
+import MUIcheckbox from './components/MUIcheckbox'
+import MUIselect from './components/MUIselect'
 import MUItextField from './components/MUItextField'
 
 function App() {
@@ -7,7 +9,9 @@ function App() {
   return (
     <>
       <MUIbutton />
-      <MUItextField/>
+      <MUItextField />
+      <MUIselect />
+      <MUIcheckbox/>
     </>
   )
 }

@@ -48,6 +48,7 @@ function MUItextField() {
                         },
                     }}
                 />
+                <hr />
             </div>
         </div>
     )
