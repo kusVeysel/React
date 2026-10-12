@@ -33,66 +33,70 @@ function MUIcheckbox() {
     };
 
     return (
-        <FormControl component="fieldset">
-            <FormLabel component="legend">
-                Eğitim Durumu
-            </FormLabel>
+        <>
+            <FormControl component="fieldset">
+                <FormLabel component="legend">
+                    Eğitim Durumu
+                </FormLabel>
 
-            <FormGroup>
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={confirms[0]}
-                            onChange={(e) => handleCheck(0, e.target.checked)}
-                        />
-                    }
-                    label="ilkokul"
-                    labelPlacement="end"
-                />
+                <FormGroup>
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={confirms[0]}
+                                onChange={(e) => handleCheck(0, e.target.checked)}
+                            />
+                        }
+                        label="ilkokul"
+                        labelPlacement="end"
+                    />
 
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={confirms[1]}
-                            onChange={(e) => handleCheck(1, e.target.checked)}
-                        />
-                    }
-                    label="ortaokul"
-                    labelPlacement="end"
-                />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={confirms[1]}
+                                onChange={(e) => handleCheck(1, e.target.checked)}
+                            />
+                        }
+                        label="ortaokul"
+                        labelPlacement="end"
+                    />
 
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={confirms[2]}
-                            onChange={(e) => handleCheck(2, e.target.checked)}
-                        />
-                    }
-                    label="lise"
-                    labelPlacement="end"
-                />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={confirms[2]}
+                                onChange={(e) => handleCheck(2, e.target.checked)}
+                            />
+                        }
+                        label="lise"
+                        labelPlacement="end"
+                    />
 
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={confirms[3]}
-                            onChange={(e) => handleCheck(3, e.target.checked)}
-                        />
-                    }
-                    label="üniversite"
-                    labelPlacement="end"
-                />
-            </FormGroup>
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={confirms[3]}
+                                onChange={(e) => handleCheck(3, e.target.checked)}
+                            />
+                        }
+                        label="üniversite"
+                        labelPlacement="end"
+                    />
+                </FormGroup>
 
-            <Button
-                variant="outlined"
-                size="medium"
-                color="info"
-                onClick={controlCheck}
-            >
-                Checkboxları Kontrol Et
-            </Button>
-        </FormControl>
+                <Button
+                    variant="outlined"
+                    size="medium"
+                    color="info"
+                    onClick={controlCheck}
+                >
+                    Checkboxları Kontrol Et
+                </Button>
+
+            </FormControl>
+            <hr />
+        </>
     );
 }
 
