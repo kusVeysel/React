@@ -6,6 +6,7 @@ import MUIbox from './components/MUIbox'
 import MUIbutton from './components/MUIbutton'
 import MUIcard from './components/MUIcard'
 import MUIcheckbox from './components/MUIcheckbox'
+import MUIdrawer from './components/MUIdrawer'
 import MUIgrid from './components/MUIgrid'
 import MUIimagelist from './components/MUIimagelist'
 import MUIselect from './components/MUIselect'
@@ -28,6 +29,7 @@ function App() {
       <MUIaccordion/>
       <MUIappbar/>
       <MUIimagelist/>
+      <MUIdrawer/>
     </>
   )
 }
