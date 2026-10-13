@@ -137,6 +137,7 @@ function MUIautocomplete() {
                 sx={{ width: 300 }}
                 renderInput={(params) => <TextField {...params} label="Filmler" size='small'/>}
             />
+            <hr />
         </div>
     )
 }
