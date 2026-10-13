@@ -2,6 +2,8 @@ import './App.css'
 import MUIaccordion from './components/MUIaccordion'
 import MUIappbar from './components/MUIappbar'
 import MUIautocomplete from './components/MUIautocomplete'
+import MUIavatar from './components/MUIavatar'
+import MUIbadge from './components/MUIbadge'
 import MUIbox from './components/MUIbox'
 import MUIbutton from './components/MUIbutton'
 import MUIcard from './components/MUIcard'
@@ -12,6 +14,7 @@ import MUIimagelist from './components/MUIimagelist'
 import MUIselect from './components/MUIselect'
 import MUIstack from './components/MUIstack'
 import MUItextField from './components/MUItextField'
+import MUItooltip from './components/MUItooltip'
 
 function App() {
 
@@ -30,6 +33,9 @@ function App() {
       <MUIappbar/>
       <MUIimagelist/>
       <MUIdrawer/>
+      <MUIbadge/>
+      <MUIavatar/>
+      <MUItooltip/>
     </>
   )
 }
