@@ -1,4 +1,5 @@
 import './App.css'
+import MUIaccordion from './components/MUIaccordion'
 import MUIautocomplete from './components/MUIautocomplete'
 import MUIbox from './components/MUIbox'
 import MUIbutton from './components/MUIbutton'
@@ -22,6 +23,7 @@ function App() {
       <MUIstack />
       <MUIgrid />
       <MUIcard/>
+      <MUIaccordion/>
     </>
   )
 }
