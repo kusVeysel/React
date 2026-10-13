@@ -7,6 +7,7 @@ import MUIbutton from './components/MUIbutton'
 import MUIcard from './components/MUIcard'
 import MUIcheckbox from './components/MUIcheckbox'
 import MUIgrid from './components/MUIgrid'
+import MUIimagelist from './components/MUIimagelist'
 import MUIselect from './components/MUIselect'
 import MUIstack from './components/MUIstack'
 import MUItextField from './components/MUItextField'
@@ -26,6 +27,7 @@ function App() {
       <MUIcard/>
       <MUIaccordion/>
       <MUIappbar/>
+      <MUIimagelist/>
     </>
   )
 }
