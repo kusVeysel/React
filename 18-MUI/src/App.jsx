@@ -1,5 +1,6 @@
 import './App.css'
 import MUIaccordion from './components/MUIaccordion'
+import MUIalert from './components/MUIalert'
 import MUIappbar from './components/MUIappbar'
 import MUIautocomplete from './components/MUIautocomplete'
 import MUIavatar from './components/MUIavatar'
@@ -36,6 +37,7 @@ function App() {
       <MUIbadge/>
       <MUIavatar/>
       <MUItooltip/>
+      <MUIalert/>
     </>
   )
 }
