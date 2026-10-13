@@ -27,7 +27,7 @@ function MUIsnackbar() {
     )
 
     return (
-        <div>
+        <>
             <Button onClick={handleClick}>Snackbarı Aç</Button>
             <Snackbar
                 open={openSnackbar}
@@ -35,8 +35,11 @@ function MUIsnackbar() {
                 onClose={handleClose}
                 message="Snackbar Başarıyla Açıldı"
                 action={action}
+                anchorOrigin={{vertical:"top",horizontal:"right"}}
             />
-        </div>
+
+            <hr />
+        </>
     )
 }
 
