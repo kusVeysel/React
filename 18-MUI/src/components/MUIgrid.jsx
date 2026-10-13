@@ -14,6 +14,7 @@ function MUIgrid() {
           ITEM
         </Grid>
       </Grid>
+      <hr />
     </div>
   );
 }
