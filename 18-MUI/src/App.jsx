@@ -18,6 +18,7 @@ import MUIselect from './components/MUIselect'
 import MUIskeleton from './components/MUIskeleton'
 import MUIsnackbar from './components/MUIsnackbar'
 import MUIstack from './components/MUIstack'
+import MUItable from './components/MUItable'
 import MUItextField from './components/MUItextField'
 import MUItooltip from './components/MUItooltip'
 
@@ -46,6 +47,7 @@ function App() {
       <MUIsnackbar/>
       <MUIprogress/>
       <MUIskeleton/>
+      <MUItable/>
     </>
   )
 }
