@@ -70,5 +70,3 @@ export default MUIbutton
 //* sx: Butona özel CSS benzeri stiller uygular. Örnek: `<Button sx={{ borderRadius: 3, m: 1 }}>Özel Stil</Button>`
 //* disableElevation: contained butonun gölge efektini kaldırır.
 //* disableRipple: Tıklama dalgası efektini kapatır.
-
-//* Not: variant, color, size gibi özellikler Button bileşenine prop olarak verilir. Birden fazla prop aynı anda kullanılabilir. Örneğin: <Button variant="contained" color="success" size="large">Kaydet</Button>
