@@ -67,10 +67,8 @@ export default MUIcard
 // → color: Butonun tema rengini belirler.
 
 //? Ek Kullanışlı Özellikler
-//* elevation: Kartın gölge seviyesini belirler. Örnek: <Card elevation={4}>
-//* raised: Kartın daha belirgin gölgeyle gösterilmesini sağlar.
-//* sx={{ borderRadius: 3 }}: Kartın köşelerini yuvarlatır.
-//* sx={{ boxShadow: 3 }}: Kartın gölge seviyesini ayarlar.
-//* onClick: Kart veya butona tıklanınca çalışacak fonksiyonu tanımlar.
+// → elevation: Kartın gölge seviyesini belirler. Örnek: <Card elevation={4}>
+// → raised: Kartın daha belirgin gölgeyle gösterilmesini sağlar.
+// → onClick: Kart veya butona tıklanınca çalışacak fonksiyonu tanımlar.
 //* CardHeader: Kartın üst kısmına başlık, alt başlık veya avatar ekler.
 //* CardActions disableSpacing: CardActions alanındaki varsayılan boşluk düzenini kaldırır.

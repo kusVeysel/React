@@ -40,18 +40,15 @@ export default MUIdrawer;
 // → open: Panelin açık veya kapalı olduğunu belirler.
 // → onClose: Panel kapatıldığında çalışır.
 
-
-//? Drawer Anchor (Açılma Yönü)
 // → anchor="left": Paneli soldan açar (varsayılan).
 // → anchor="right": Paneli sağdan açar.
 // → anchor="top": Paneli yukarıdan açar.
 // → anchor="bottom": Paneli aşağıdan açar.
 
-
 //? Ek Kullanışlı Özellikler
-//* variant="temporary": Geçici panel oluşturur; dışına tıklanınca kapanabilir (varsayılan).
-//* variant="persistent": Ana içeriğin yanında açılıp kapanan panel oluşturur.
-//* variant="permanent": Sürekli görünür olan panel oluşturur.
-//* ModalProps: Geçici Drawer'ın modal davranışını özelleştirmek için kullanılır.
-//* sx: Panelin renk, boyut ve diğer stillerini düzenler.
-//* disableScrollLock: Desteklenen modal davranışlarında arka plan kaydırma kilidini kapatır.
+// → variant="temporary": Geçici panel oluşturur; dışına tıklanınca kapanabilir (varsayılan).
+// → variant="persistent": Ana içeriğin yanında açılıp kapanan panel oluşturur.
+// → variant="permanent": Sürekli görünür olan panel oluşturur.
+// → ModalProps: Geçici Drawer'ın modal davranışını özelleştirmek için kullanılır.
+// → sx: Panelin renk, boyut ve diğer stillerini düzenler.
+// → disableScrollLock: Desteklenen modal davranışlarında arka plan kaydırma kilidini kapatır.

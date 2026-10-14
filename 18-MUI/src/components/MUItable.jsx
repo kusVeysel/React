@@ -63,8 +63,6 @@ export default MUItable
 //* Table: Verileri satır ve sütunlar hâlinde düzenli şekilde göstermek için kullanılır.
 //* Genellikle ürün listeleri, kullanıcı kayıtları, siparişler ve istatistikler için kullanılır.
 
-
-//? Table Temel Bileşenleri
 //* TableContainer: Tabloyu saran kapsayıcıdır; kaydırma ve dış görünüm ayarlarında kullanılır.
 //* Table: Tablo yapısının ana bileşenidir.
 //* TableHead: Tablonun başlık satırlarını içerir.
@@ -73,15 +71,12 @@ export default MUItable
 //* TableCell: Satır içerisinde bir hücre oluşturur.
 // → Paper: Tabloya arka plan ve yüzey görünümü kazandırmak için kullanılabilir.
 
-
-//? Tablo Başlıkları ve Hücreler
 //* TableCell: Hem başlık hem de veri hücresi oluşturmak için kullanılır.
 // → align="left": Metni sola hizalar (varsayılan).
 // → align="center": Metni ortalar.
 // → align="right": Metni sağa hizalar.
 // → component="th": Hücrenin HTML'de başlık hücresi olarak kullanılmasını sağlar.
 // → scope="row": Hücrenin ilgili satırın başlığı olduğunu belirtir; erişilebilirliği artırır.
-
 
 //? Ek Kullanışlı Özellikler
 // → size="small": Daha sıkı ve küçük bir tablo görünümü oluşturur.

@@ -26,19 +26,14 @@ export default MUIstack
 // → spacing: Öğeler arasındaki boşluğu belirler. Örnek: spacing={2}
 // → divider: Öğelerin arasına ayraç ekler. Örnek: divider={<Divider />}
 
-
-//? Responsive (Duyarlı Tasarım)
 // → direction={{ xs: 'column', sm: 'row' }}: Küçük ekranlarda dikey, sm ve üzerindeki ekranlarda yatay sıralama yapar.
 // → xs: En küçük ekran boyutlarından itibaren uygulanır.
 // → sm / md / lg / xl: Farklı ekran boyutları için stil belirlemeyi sağlar.
 
-
-//? MUI Divider (Ayraç)
 //* Divider: Öğeler arasında görsel ayraç oluşturur.
 // → orientation="horizontal": Yatay ayraç oluşturur (varsayılan).
 // → orientation="vertical": Dikey ayraç oluşturur.
 // → flexItem: Divider'ın Stack içindeki öğelerin boyutuna uyum sağlamasına yardımcı olur.
-
 
 //? Ek Kullanışlı Özellikler
 // → useFlexGap: spacing yerine CSS gap kullanımını etkinleştirir.

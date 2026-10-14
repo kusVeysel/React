@@ -62,11 +62,11 @@ export default MUIbutton
 // → İkon kullanmak için `@mui/icons-material` paketinden ilgili ikon import edilir.
 
 //? Ek Kullanışlı Özellikler
-//* disabled: Butonu devre dışı bırakır. Örnek: <Button disabled>Pasif</Button>
-//* fullWidth: Butonun bulunduğu alanın genişliğini kaplamasını sağlar.
-//* onClick: Butona tıklandığında çalışacak fonksiyonu belirler. Örnek: <Button onClick={() → alert('Tıklandı')}>Tıkla</Button>
-//* href: Butonu bağlantı olarak kullanır. Örnek: <Button href="https://example.com">Siteye Git</Button>
-//* loading: Yükleme durumunu gösterir ve butonun tekrar kullanılmasını engeller. Desteklenen MUI sürümüne bağlıdır.
-//* sx: Butona özel CSS benzeri stiller uygular. Örnek: `<Button sx={{ borderRadius: 3, m: 1 }}>Özel Stil</Button>`
-//* disableElevation: contained butonun gölge efektini kaldırır.
-//* disableRipple: Tıklama dalgası efektini kapatır.
+// → disabled: Butonu devre dışı bırakır. Örnek: <Button disabled>Pasif</Button>
+// → fullWidth: Butonun bulunduğu alanın genişliğini kaplamasını sağlar.
+// → onClick: Butona tıklandığında çalışacak fonksiyonu belirler. Örnek: <Button onClick={() → alert('Tıklandı')}>Tıkla</Button>
+// → href: Butonu bağlantı olarak kullanır. Örnek: <Button href="https://example.com">Siteye Git</Button>
+// → loading: Yükleme durumunu gösterir ve butonun tekrar kullanılmasını engeller. Desteklenen MUI sürümüne bağlıdır.
+// → sx: Butona özel CSS benzeri stiller uygular. Örnek: `<Button sx={{ borderRadius: 3, m: 1 }}>Özel Stil</Button>`
+// → disableElevation: contained butonun gölge efektini kaldırır.
+// → disableRipple: Tıklama dalgası efektini kapatır.

@@ -124,23 +124,17 @@ export default MUIimagelist
 
 //* ImageList: Görselleri ızgara veya farklı düzenlerde listelemeyi sağlar.
 //* ImageListItem: Listedeki her bir görsel öğesini oluşturur.
-//* sx={{ width: 500, height: 450 }}: Listenin genişliğini ve yüksekliğini belirler.
+// → sx={{ width: 500, height: 450 }}: Listenin genişliğini ve yüksekliğini belirler.
 
-
-//? ListSubheader (Liste Başlığı)
 //* ListSubheader: Görsel listesinin belirli bir bölümüne başlık ekler.
 // → component="div": Başlığın hangi HTML elementiyle oluşturulacağını belirler.
 //→ cols: Öğenin kaç sütun kaplayacağını belirler.
 
-
-//? ImageListItemBar (Görsel Bilgi Çubuğu)
 //* ImageListItemBar: Görselin üzerinde veya altında başlık ve ek bilgiler gösterir.
 // → title: Görselin başlığını belirler.
 // → subtitle: Başlığın altında gösterilecek ek bilgiyi belirler.
 // → actionIcon: Bilgi çubuğuna buton veya ikon ekler.
 
-
-//? Görsel Özellikleri
 // → src: Görselin kaynak adresini belirler.
 // → srcSet: Farklı ekran çözünürlükleri için alternatif görsel kaynakları sunar.
 // → alt: Görsel yüklenemediğinde veya ekran okuyucularında kullanılan açıklamadır.
@@ -149,20 +143,17 @@ export default MUIimagelist
 // → auto=format: Görsel formatının uygun şekilde sunulmasını sağlar.
 // → dpr=2: Daha yüksek piksel yoğunluğu için görsel kaynağı belirtir.
 
-
-//? Ek Kullanışlı Özellikler
-//* variant="standard": Standart ızgara düzenini kullanır.
-//* variant="quilted": Farklı boyutlardaki görsellerle düzen oluşturur.
-//* variant="woven": Görselleri iç içe geçmiş düzenle gösterir.
-//* variant="masonry": Görselleri duvar görünümünde, farklı yüksekliklerde sıralar.
-//* cols: Izgaradaki sütun sayısını belirler.
-//* rowHeight: Görsellerin satır yüksekliğini belirler; "auto" otomatik yükseklik sağlar.
-//* gap: Görseller arasındaki boşluğu belirler.
-//* rows ve cols: Desteklenen düzenlerde öğenin kaplayacağı satır ve sütun sayısını belirtir.
-
-
-//? IconButton ve InfoIcon
 //* IconButton: İkon içeren tıklanabilir buton oluşturur.
 //* InfoIcon: Bilgi simgesidir; @mui/icons-material paketinden import edilir.
-//* aria-label: Ekran okuyucularına butonun amacını açıklar.
-//* sx: İkonun rengini ve diğer stillerini belirler.
+// → aria-label: Ekran okuyucularına butonun amacını açıklar.
+// → sx: İkonun rengini ve diğer stillerini belirler.
+
+//? Ek Kullanışlı Özellikler
+// → variant="standard": Standart ızgara düzenini kullanır.
+// → variant="quilted": Farklı boyutlardaki görsellerle düzen oluşturur.
+// → variant="woven": Görselleri iç içe geçmiş düzenle gösterir.
+// → variant="masonry": Görselleri duvar görünümünde, farklı yüksekliklerde sıralar.
+// → cols: Izgaradaki sütun sayısını belirler.
+// → rowHeight: Görsellerin satır yüksekliğini belirler; "auto" otomatik yükseklik sağlar.
+// → gap: Görseller arasındaki boşluğu belirler.
+// → rows ve cols: Desteklenen düzenlerde öğenin kaplayacağı satır ve sütun sayısını belirtir.

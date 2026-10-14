@@ -1,5 +1,4 @@
-﻿
-import Badge from '@mui/material/Badge'
+﻿import Badge from '@mui/material/Badge'
 import AttachEmailIcon from '@mui/icons-material/AttachEmail'
 
 function MUIbadge() {
@@ -30,20 +29,16 @@ export default MUIbadge
 // → badgeContent: Rozet içerisinde gösterilecek sayıyı veya metni belirler.
 // → color: Rozetin rengini belirler.
 
-//? Sayı Sınırı
-//* max={9}: Gösterilecek en büyük sayıyı belirler.
-//* badgeContent={15} ve max={9}: Rozette "9+" gösterilir.
-//* showZero: badgeContent={0} olduğunda da rozeti gösterir (varsayılan olarak 0 gizlenir).
+// → max={9}: Gösterilecek en büyük sayıyı belirler.
+// → badgeContent={15} ve max={9}: Rozette "9+" gösterilir.
+// → showZero: badgeContent={0} olduğunda da rozeti gösterir (varsayılan olarak 0 gizlenir).
 
-//? Rozetin Konumu
-//* anchorOrigin: Rozetin, içindeki bileşene göre hangi konumda görüneceğini belirler.
+// → anchorOrigin: Rozetin, içindeki bileşene göre hangi konumda görüneceğini belirler.
 // → vertical: "top" veya "bottom" ile dikey konumu belirler.
 // → horizontal: "left" veya "right" ile yatay konumu belirler.
 
-
 //? Ek Kullanışlı Özellikler
-//* variant="standard": Normal rozet görünümünü kullanır (varsayılan).
-//* variant="dot": Sayı yerine küçük bir nokta gösterir.
-//* invisible: Rozeti gizler.
-//* overlap: İkon veya bileşenle rozetin nasıl örtüşeceğini belirler.
-//* Badge genellikle mesaj, e-posta, bildirim ve sepet sayısını göstermek için kullanılır.
+// → variant="standard": Normal rozet görünümünü kullanır (varsayılan).
+// → variant="dot": Sayı yerine küçük bir nokta gösterir.
+// → invisible: Rozeti gizler.
+// → overlap: İkon veya bileşenle rozetin nasıl örtüşeceğini belirler.

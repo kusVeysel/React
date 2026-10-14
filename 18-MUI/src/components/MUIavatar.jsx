@@ -22,20 +22,16 @@ export default MUIavatar
 //* Avatar: Kullanıcı fotoğrafı, baş harfi veya simgesi göstermek için kullanılır.
 // → src: Avatar içerisinde gösterilecek görselin URL adresini belirler.
 
-
-//? Stack ile Avatarları Düzenleme
 //* Stack: Bileşenleri yatay veya dikey olarak sıralar.
-//* direction="row": Bileşenleri yatay sıralar.
-//* direction="column": Bileşenleri dikey sıralar.
-//* spacing={2}: Bileşenler arasındaki boşluğu belirler (tema aralık birimi kullanılır).
-//* alignItems="center": Bileşenleri dikey eksende ortalar (row düzeninde).
-//* flexWrap="wrap": Sığmayan bileşenlerin alt satıra geçmesini sağlar.
-
+// → direction="row": Bileşenleri yatay sıralar.
+// → direction="column": Bileşenleri dikey sıralar.
+// → spacing={2}: Bileşenler arasındaki boşluğu belirler (tema aralık birimi kullanılır).
+// → alignItems="center": Bileşenleri dikey eksende ortalar (row düzeninde).
+// → flexWrap="wrap": Sığmayan bileşenlerin alt satıra geçmesini sağlar.
 
 //? Ek Kullanışlı Özellikler
-//* variant="circular": Yuvarlak avatar oluşturur (varsayılan).
-//* variant="rounded": Köşeleri yuvarlatılmış avatar oluşturur.
-//* variant="square": Kare avatar oluşturur.
-//* alt: Görsel yüklenemediğinde alternatif metin sağlar; erişilebilirlik için de kullanılır.
+// → variant="circular": Yuvarlak avatar oluşturur (varsayılan).
+// → variant="rounded": Köşeleri yuvarlatılmış avatar oluşturur.
+// → variant="square": Kare avatar oluşturur.
+// → alt: Görsel yüklenemediğinde alternatif metin sağlar; erişilebilirlik için de kullanılır.
 //* AvatarGroup: Birden fazla avatarı gruplayarak göstermek için kullanılır.
-//* Avatar genellikle profil alanlarında, yorumlarda, kullanıcı listelerinde ve sohbet ekranlarında kullanılır.

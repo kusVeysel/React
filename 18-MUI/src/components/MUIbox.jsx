@@ -15,7 +15,7 @@ export default MUIbox
 //? MUI Box (Kutu Bileşeni)
 
 //* Box: İçerikleri gruplamak ve düzenlemek için kullanılan temel bir kapsayıcı bileşendir.
-//* sx: CSS benzeri stilleri doğrudan bileşene uygulamayı sağlar.
+// → sx: CSS benzeri stilleri doğrudan bileşene uygulamayı sağlar.
 
 
 // Htmldeki div ile aynıdır.

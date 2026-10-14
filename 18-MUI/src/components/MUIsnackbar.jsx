@@ -50,8 +50,6 @@ export default MUIsnackbar
 //* Snackbar: Kullanıcıya kısa süreli bilgi veya işlem sonucu göstermek için kullanılır.
 //* Alert'ten farkı: Genellikle ekranın bir köşesinde geçici olarak görünür ve kendiliğinden kapanabilir.
 
-
-//? Snackbar Özellikleri
 // → message: Bildirim içerisinde gösterilecek metni belirler.
 // → autoHideDuration={3000}: Bildirimin 3000 milisaniye (3 saniye) sonra kapanmasını sağlar.
 // → anchorOrigin: Bildirimin ekranda hangi konumda görüneceğini belirler.
@@ -59,9 +57,8 @@ export default MUIsnackbar
 // → horizontal: "left", "center" veya "right" ile yatay konumu belirler.
 // → anchorOrigin={{ vertical: "top", horizontal: "right" }}: Bildirimi sağ üst köşede gösterir.
 
-
 //? Ek Kullanışlı Özellikler
-//* key: Art arda gelen bildirimlerin ayrı ayrı gösterilmesine yardımcı olabilir.
-//* resumeHideDuration: Fareyle üzerine gelme gibi durumların ardından kapanma süresini belirler.
+// → key: Art arda gelen bildirimlerin ayrı ayrı gösterilmesine yardımcı olabilir.
+// → resumeHideDuration: Fareyle üzerine gelme gibi durumların ardından kapanma süresini belirler.
 //* ClickAwayListener: Dışarı tıklama davranışlarını ayrıca yönetmek gerektiğinde kullanılabilir.
 //* SnackbarContent: Bildirim içeriğinin görünümünü özelleştirmek için kullanılabilir.

@@ -60,24 +60,17 @@ export default MUItextField
 // → variant: 'outlined': Kenarlıklı giriş alanı oluşturur (varsayılan).
 // → variant: 'standard': Alt çizgili giriş alanı oluşturur.
 
-
-//? Label ve HelperText
 // → label: Giriş alanının başlığını belirler. Örnek: label="İsminizi Giriniz"
 // → helperText: Giriş alanının altında açıklama gösterir. Örnek: helperText="Şifrenizi kimseyle paylaşmayınız."
 
-
-//? Etkileşim Özellikleri
 // → disabled: Giriş alanını devre dışı bırakır; kullanıcı değiştiremez.
 // → slotProps: readOnly: Alanın değerinin değiştirilmesini engeller, ancak alan devre dışı olmaz.
 // → value: Giriş alanının değerini belirler. Tek başına kullanıldığında kontrollü alan oluşturur.
 
-
-//? InputAdornment (Giriş Alanına İkon Ekleme)
 // → startAdornment: Giriş alanının başına ikon veya metin ekler.
 // → endAdornment: Giriş alanının sonuna ikon veya metin ekler.
 //* InputAdornment position → 'start' / 'end': Eklentinin hangi tarafta bulunacağını belirler.
 // → İkon kullanmak için @mui/icons-material paketinden ilgili ikon import edilir.
-
 
 //? Ek Kullanışlı Özellikler
 // → type: Giriş türünü belirler. Örnek: type="password", type="email", type="number"

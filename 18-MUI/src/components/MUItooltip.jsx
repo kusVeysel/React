@@ -24,8 +24,6 @@ export default MUItooltip
 // → title: Tooltip içerisinde gösterilecek metni belirler.
 // → placement: Bilgi balonunun hangi konumda açılacağını belirler.
 
-
-//? Placement (Konumlandırma)
 // → placement="top": Üst tarafta gösterir.
 // → placement="bottom": Alt tarafta gösterir.
 // → placement="left": Sol tarafta gösterir.
@@ -34,21 +32,16 @@ export default MUItooltip
 // → placement="top-end": Üst tarafta, bitiş hizasında gösterir.
 // → start ve end, konumu bileşenin hizasına göre belirler.
 
-
-//? IconButton (İkon Butonu)
 // → IconButton: İkonları tıklanabilir bir buton hâline getirir.
 // → İçerisine DeleteIcon gibi ikon bileşenleri yerleştirilebilir.
 // → color: Butonun rengini belirler. Örnek: color="error"
 // → size: Buton boyutunu belirler. Örnek: size="small" veya size="large"
 // → onClick: Butona tıklandığında çalışacak fonksiyonu belirler.
 
-
-//? Tooltip Kullanımı
 // → Tooltip içerisine doğrudan bir metin veya ikon yerine, üzerine gelindiğinde açıklama gösterilecek bileşen yerleştirilir.
 // → Tooltip'in çocuğu genellikle ref ile çalışabilen bir DOM elemanı veya MUI bileşeni olmalıdır.
 // → disabled bir butonda Tooltip göstermek için butonu bir span ile sarmalamak gerekebilir.
 // → Örnek: <Tooltip title="Sil"><IconButton><DeleteIcon /></IconButton></Tooltip>
-
 
 //? Ek Kullanışlı Özellikler
 // → arrow: Tooltip'e ok işareti ekler.

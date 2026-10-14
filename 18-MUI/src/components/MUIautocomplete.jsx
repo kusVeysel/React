@@ -153,31 +153,26 @@ export default MUIautocomplete
 // → sx: Bileşene özel stiller uygular. Örnek: sx={{ width: 300 }}
 // → disablePortal: Açılır listeyi ayrı bir portal yerine bileşenin bulunduğu DOM yapısında tutar.
 
-
-//? renderInput (Giriş Alanı)
-//* renderInput: Autocomplete içerisinde kullanılacak giriş alanını belirler.
-//* params: Autocomplete tarafından TextField bileşenine aktarılması gereken özellikleri içerir.
+// → renderInput: Autocomplete içerisinde kullanılacak giriş alanını belirler.
+// → params: Autocomplete tarafından TextField bileşenine aktarılması gereken özellikleri içerir.
 //* <TextField {...params} label="Filmler" />: Parametreleri TextField'a aktarır ve etiket belirler.
-//* {...params}: Spread operatörüyle nesnedeki özellikleri bileşene aktarır.
+// → {...params}: Spread operatörüyle nesnedeki özellikleri bileşene aktarır.
 
-
-//? options Veri Yapısı
-//* options genellikle dizi şeklinde verilir.
-//* Her nesnenin label özelliği, seçenek metnini belirler.
+// → options genellikle dizi şeklinde verilir.
+// → Her nesnenin label özelliği, seçenek metnini belirler.
 // → Örnek: { label: 'Inception', year: 2010 }
-//* getOptionLabel: Seçenek nesnesinde gösterilecek metni belirler.Mesela tanımlanan dizi içerinde filmlerin yılı gösterilsin.
+// → getOptionLabel: Seçenek nesnesinde gösterilecek metni belirler.Mesela tanımlanan dizi içerinde filmlerin yılı gösterilsin.
 // → Örnek: getOptionLabel={(option) => option.year}
 
-
 //? Ek Kullanışlı Özellikler
-//* multiple: Birden fazla seçenek seçilmesini sağlar.
-//* freeSolo: Listede bulunmayan bir metnin de girilmesine izin verir.
-//* disabled: Autocomplete alanını devre dışı bırakır.
-//* readOnly: Seçim alanının değiştirilmesini engeller.
-//* loading: Yükleme durumunu belirtir.
-//* autoHighlight: İlk eşleşen seçeneği otomatik vurgular.
-//* autoSelect: Odak kaybolduğunda vurgulanan seçeneğin seçilmesini sağlayabilir.
-//* onChange: Seçim değiştiğinde çalışır. Örnek: onChange={(event, value) => console.log(value)}
-//* value: Seçili değeri belirler; kontrollü kullanımda onChange ile birlikte kullanılır.
-//* isOptionEqualToValue: Seçenek ile seçili değerin nasıl karşılaştırılacağını belirler.
-//* filterSelectedOptions: Önceden seçilmiş seçenekleri listede gizler.
+// → multiple: Birden fazla seçenek seçilmesini sağlar.
+// → freeSolo: Listede bulunmayan bir metnin de girilmesine izin verir.
+// → disabled: Autocomplete alanını devre dışı bırakır.
+// → readOnly: Seçim alanının değiştirilmesini engeller.
+// → loading: Yükleme durumunu belirtir.
+// → autoHighlight: İlk eşleşen seçeneği otomatik vurgular.
+// → autoSelect: Odak kaybolduğunda vurgulanan seçeneğin seçilmesini sağlayabilir.
+// → onChange: Seçim değiştiğinde çalışır. Örnek: onChange={(event, value) => console.log(value)}
+// → value: Seçili değeri belirler; kontrollü kullanımda onChange ile birlikte kullanılır.
+// → isOptionEqualToValue: Seçenek ile seçili değerin nasıl karşılaştırılacağını belirler.
+// → filterSelectedOptions: Önceden seçilmiş seçenekleri listede gizler.

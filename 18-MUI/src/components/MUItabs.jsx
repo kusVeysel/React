@@ -76,8 +76,6 @@ export default MUItabs;
 //* Tabs: İçeriği farklı sekmelere ayırarak kullanıcının sekmeler arasında geçiş yapmasını sağlar.
 //* Genellikle profil sayfaları, ayarlar, ürün detayları ve kategori içeriklerinde kullanılır.
 
-
-//? Tabs ve Tab
 //* Tabs: Sekmeleri bir arada tutan ana bileşendir.
 //* Tab: Tek bir sekme oluşturur.
 // → label: Sekmenin üzerinde görünecek metni belirler.
@@ -85,8 +83,6 @@ export default MUItabs;
 // → onChange: Kullanıcı başka bir sekmeye geçtiğinde çalışır.
 // → Örnek: <Tab label="Profil" />
 
-
-//? CustomTabPanel (Özel Sekme İçeriği)
 //* CustomTabPanel: Aktif sekmeye ait içeriği göstermek için oluşturulmuş özel bileşendir.
 // → children: Sekmenin içerisinde gösterilecek içeriği temsil eder.
 // → value: Şu anda aktif olan sekmenin değeridir.
@@ -95,8 +91,6 @@ export default MUItabs;
 // → {value === index && <Box sx={{ p: 3 }}>{children}</Box>}: Yalnızca aktif panelin içeriğini oluşturur.
 // → sx={{ p: 3 }}: İçeriğin etrafına boşluk ekler.
 
-
-//? a11yProps (Erişilebilirlik Özellikleri)
 // → a11yProps(index): Sekme ve panel arasında erişilebilirlik bağlantısı kuran özellikleri döndürür.
 // → id: Sekmenin benzersiz kimliğini belirler.
 // → aria-controls: Sekmenin kontrol ettiği panelin id değerini belirtir.
@@ -104,14 +98,11 @@ export default MUItabs;
 // → role="tabpanel": HTML elemanının bir sekme paneli olduğunu belirtir.
 // → Bu özellikler ekran okuyucuların sekmelerle içerikleri ilişkilendirmesine yardımcı olur.
 
-
-//? PropTypes
 // → PropTypes: Bileşene gönderilen prop değerlerinin türlerini geliştirme sırasında kontrol etmeye yardımcı olur.
 // → PropTypes.node: Metin, sayı veya React bileşeni gibi render edilebilir içerikleri kabul eder.
 // → PropTypes.number: Sayı türündeki değerleri belirtir.
 // → isRequired: İlgili prop'un zorunlu olduğunu belirtir.
 // → ...other: Diğer prop'ları nesne üzerinden alır ve ilgili HTML elemanına aktarır.
-
 
 //? Ek Kullanışlı Özellikler
 // → orientation="vertical": Sekmeleri dikey olarak düzenler.

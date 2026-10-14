@@ -30,19 +30,14 @@ export default MUIskeleton
 //* Genellikle resimler, kartlar, metinler ve liste öğeleri yüklenirken kullanılır.
 //* İçerik yüklenene kadar boş bir alan göstermek yerine kullanıcıya içerik geleceğini hissettirir.
 
-
-//? Skeleton Variant (Görünüm Türleri)
 // → variant="text": Metin satırına benzeyen bir iskelet oluşturur.
 // → variant="circular": Dairesel bir iskelet oluşturur.
 // → variant="rectangular": Dikdörtgen bir iskelet oluşturur.
 // → variant="rounded": Köşeleri yuvarlatılmış dikdörtgen oluşturur.
 
-
-//? Animation (Animasyon)
 // → animation="pulse": İskeletin parlaklığı değişerek animasyon oluşturur (varsayılan).
 // → animation="wave": İskelet üzerinde dalga efekti oluşturur.
 // → animation={false}: Animasyonu kapatır.
-
 
 //? Ek Kullanım
 //* Skeleton, gerçek içeriğin boyutlarına yakın hazırlanırsa sayfa düzeninin değişmesini azaltır.

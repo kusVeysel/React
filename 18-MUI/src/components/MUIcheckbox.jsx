@@ -105,13 +105,10 @@ export default MUIcheckbox;
 //? MUI Checkbox (Onay Kutusu)
 
 //* Checkbox: Kullanıcının bir seçeneği işaretlemesini veya işareti kaldırmasını(toggle) sağlar.
-//* checked: Checkbox'ın işaretli olup olmadığını belirler.
-//* onChange: İşaretleme durumu değiştiğinde çalışır.
-//* disabled: Checkbox'ı devre dışı bırakır.
-//* indeterminate: Checkbox'ın ara durumda görünmesini sağlar.
-
-
-//? Form
+// → checked: Checkbox'ın işaretli olup olmadığını belirler.
+// → onChange: İşaretleme durumu değiştiğinde çalışır.
+// → disabled: Checkbox'ı devre dışı bırakır.
+// → indeterminate: Checkbox'ın ara durumda görünmesini sağlar.
 
 //* FormControl: Form elemanlarını bir arada düzenler.
 // → component="fieldset": FormControl bileşenini HTML fieldset olarak oluşturur.
@@ -125,7 +122,6 @@ export default MUIcheckbox;
 // → label: Checkbox'ın yanında gösterilecek metni belirler.
 // → labelPlacement: 'start' / 'end' / 'top' / 'bottom': Etiketin konumunu belirler.
 
-
 //? useState ile Checkbox Yönetimi
 //* useState([false, false, false, false]): Dört checkbox'ın başlangıçta işaretsiz olmasını sağlar.
 //* checked={confirms[index]}: Checkbox'ın durumunu state'e bağlar.
@@ -133,19 +129,16 @@ export default MUIcheckbox;
 //* e.target.checked: Checkbox'ın yeni durumunu (true/false) verir.
 //* [...prev]: Önceki dizinin kopyasını oluşturur; state güncellenirken doğrudan değiştirilmesini önler.
 
-
 //? Seçili Değerleri Kontrol Etme
 //* map(): Dizi elemanlarını dönüştürerek yeni bir dizi oluşturur.
 //* filter(Boolean): null, false ve boş değerleri eler.
 //* join(', '): Dizi elemanlarını virgülle birleştirir.
 //* selected.length > 0: En az bir seçeneğin seçilip seçilmediğini kontrol eder.
-//* alert(): Seçilen seçenekleri veya hiçbir seçim yapılmadığını mesaj olarak gösterir.
-
 
 //? Ek Kullanışlı Özellikler
-//* color → 'primary' / 'secondary' / 'success' / 'error' / 'info' / 'warning': Checkbox rengini belirler.
-//* size → 'small' / 'medium': Checkbox boyutunu belirler.
-//* required: Form gönderiminde seçimin zorunlu olmasını sağlar.
-//* name: Checkbox'a form alanı adı verir.
-//* value: Checkbox'ın temsil ettiği değeri belirler.
-//* defaultChecked: Başlangıçta işaretli olmasını sağlar; genellikle kontrol edilmeyen kullanımda tercih edilir.
+// → color: 'primary' / 'secondary' / 'success' / 'error' / 'info' / 'warning': Checkbox rengini belirler.
+// → size: 'small' / 'medium': Checkbox boyutunu belirler.
+// → required: Form gönderiminde seçimin zorunlu olmasını sağlar.
+// → name: Checkbox'a form alanı adı verir.
+// → value: Checkbox'ın temsil ettiği değeri belirler.
+// → defaultChecked: Başlangıçta işaretli olmasını sağlar; genellikle kontrol edilmeyen kullanımda tercih edilir.

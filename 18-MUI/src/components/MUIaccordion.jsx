@@ -51,19 +51,15 @@ export default MUIaccordion
 
 //* expandIcon: Açılma/kapanma simgesini(ikon) belirler. Örnek: expandIcon={<ExpandMoreIcon />}
 
-
-//? expanded ve onChange (Açılma Durumu)
-//* expanded: Panelin açık mı kapalı mı olduğunu belirler (true/false).
-//* onChange: Panelin açılma veya kapanma(değişme) durumunda çalışır.
+// → expanded: Panelin açık mı kapalı mı olduğunu belirler (true/false).
+// → onChange: Panelin açılma veya kapanma(değişme) durumunda çalışır.
 
 // → (event, expanded): MUI tarafından gönderilen olay ve yeni açık/kapalı durumu parametreleridir.
 
 
 //? Ek Kullanışlı Özellikler
-//* disabled: Panelin açılıp kapanmasını engeller.
-//* defaultExpanded: Panelin başlangıçta açık olmasını sağlar.
-//* disableGutters: Panelin varsayılan dikey boşluklarını azaltır.
-//* square: Panelin köşelerindeki yuvarlaklığı kaldırır.
-//* TransitionProps: Açılma/kapanma geçişini özelleştirmek için kullanılabilir; desteklenen özellikler MUI sürümüne bağlıdır.
-//* sx: Panelin arka plan, kenarlık ve boşluk gibi stillerini belirler.
-// → Örnek: <Accordion sx={{ bgcolor: "lightgray" }}>...</Accordion>
+// → disabled: Panelin açılıp kapanmasını engeller.
+// → defaultExpanded: Panelin başlangıçta açık olmasını sağlar.
+// → square: Panelin köşelerindeki yuvarlaklığı kaldırır.
+// → disableGutters: Panelin varsayılan dikey boşluklarını azaltır.
+// → TransitionProps: Açılma/kapanma geçişini özelleştirmek için kullanılabilir; desteklenen özellikler MUI sürümüne bağlıdır.

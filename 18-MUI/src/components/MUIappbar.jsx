@@ -89,30 +89,25 @@ export default MUIappbar;
 // → position="sticky": Kaydırma sırasında belirli noktada üstte kalır.
 // → position="absolute": En yakın konumlandırılmış üst elemana göre konumlanır.
 
-//? Toolbar ve Typography
 //* Toolbar: AppBar içerisindeki ikon, başlık ve butonları hizalar.
 //* Typography: Başlık ve metinleri biçimlendirir.(Menü adı)
 
-//? IconButton ve MenuIcon
 //* IconButton: İkon içeren tıklanabilir buton oluşturur.
 //* MenuIcon: Menü simgesidir; @mui/icons-material paketinden import edilir.
 
-//? Menu ve MenuItem (Açılır Menü)
 //* Menu: Tıklamayla açılan menü oluşturur.
 //* MenuItem: Menü içerisindeki seçenekleri oluşturur.
-//* anchorEl: Menünün hangi HTML elementine göre açılacağını belirler.
-//* open={Boolean(anchorEl)}: anchorEl varsa menüyü açar, yoksa kapatır.
-//* onClose: Menü kapatıldığında çalışır.
-//* onClick={closeMenu}: Menü seçeneğine tıklanınca menüyü kapatır.
+// → anchorEl: Menünün hangi HTML elementine göre açılacağını belirler.
+// → open={Boolean(anchorEl)}: anchorEl varsa menüyü açar, yoksa kapatır.
+// → onClose: Menü kapatıldığında çalışır.
+// → onClick={closeMenu}: Menü seçeneğine tıklanınca menüyü kapatır.
 
 // → e.currentTarget: Olayın tanımlandığı HTML elementini verir.
 
-
 //? Ek Kullanışlı Özellikler
-//* color: AppBar'ın tema rengini belirler. Örnek: color="primary"
-//* elevation: AppBar'ın gölge seviyesini belirler.
-//* disableGutters: Toolbar'ın varsayılan yatay boşluklarını kaldırır.
-//* sx: Özel stiller uygular. Örnek: sx={{ bgcolor: "black", px: 2 }}
-//* href: Button bileşenini bağlantı olarak kullanır. Örnek: <Button href="/">Ana Sayfa</Button>
-//* component: Bileşenin hangi HTML elementiyle oluşturulacağını belirler.
-
+// → color: AppBar'ın tema rengini belirler. Örnek: color="primary"
+// → elevation: AppBar'ın gölge seviyesini belirler.
+// → disableGutters: Toolbar'ın varsayılan yatay boşluklarını kaldırır.
+// → sx: Özel stiller uygular. Örnek: sx={{ bgcolor: "black", px: 2 }}
+// → href: Button bileşenini bağlantı olarak kullanır. Örnek: <Button href="/">Ana Sayfa</Button>
+// → component: Bileşenin hangi HTML elementiyle oluşturulacağını belirler.
