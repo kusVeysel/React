@@ -1,5 +1,4 @@
-import React from 'react'
-import TextField from '@mui/material/TextField';
+﻿import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
 function MUIautocomplete() {
@@ -45,7 +44,7 @@ function MUIautocomplete() {
         { label: "It's a Wonderful Life", year: 1946 },
         { label: 'Life Is Beautiful', year: 1997 },
         { label: 'The Usual Suspects', year: 1995 },
-        { label: 'Léon: The Professional', year: 1994 },
+        { label: 'LÃ©on: The Professional', year: 1994 },
         { label: 'Spirited Away', year: 2001 },
         { label: 'Saving Private Ryan', year: 1998 },
         { label: 'Once Upon a Time in the West', year: 1968 },
@@ -82,7 +81,7 @@ function MUIautocomplete() {
         { label: 'Paths of Glory', year: 1957 },
         { label: 'Django Unchained', year: 2012 },
         { label: 'The Shining', year: 1980 },
-        { label: 'WALL·E', year: 2008 },
+        { label: 'WALLÂ·E', year: 2008 },
         { label: 'American Beauty', year: 1999 },
         { label: 'The Dark Knight Rises', year: 2012 },
         { label: 'Princess Mononoke', year: 1997 },
@@ -102,7 +101,7 @@ function MUIautocomplete() {
         { label: 'Braveheart', year: 1995 },
         { label: 'M', year: 1931 },
         { label: 'Requiem for a Dream', year: 2000 },
-        { label: 'Amélie', year: 2001 },
+        { label: 'AmÃ©lie', year: 2001 },
         { label: 'A Clockwork Orange', year: 1971 },
         { label: 'Like Stars on Earth', year: 2007 },
         { label: 'Taxi Driver', year: 1976 },
@@ -143,3 +142,42 @@ function MUIautocomplete() {
 }
 
 export default MUIautocomplete
+
+
+//? MUI Autocomplete (Otomatik Tamamlama)
+//* Autocomplete: Kullanıcının yazdığı metne göre seçenekleri filtreleyen seçim alanı oluşturur.
+//* options: Açılır listede gösterilecek seçenekleri belirler.
+//* sx: Bileşene özel stiller uygular. Örnek: sx={{ width: 300 }}
+//* disablePortal: Açılır listeyi ayrı bir portal yerine bileşenin bulunduğu DOM yapısında tutar.
+
+//? renderInput (Giriş Alanı)
+//* renderInput: Autocomplete içerisinde kullanılacak giriş alanını belirler.
+//* params: Autocomplete tarafından TextField bileşenine aktarılması gereken özellikleri içerir.
+//* <TextField {...params} label="Filmler" />: Parametreleri TextField'a aktarır ve etiket belirler.
+//* {...params}: Spread operatörüyle nesnedeki özellikleri bileşene aktarır.
+//* size -> 'small' / 'medium': Giriş alanının boyutunu belirler.
+
+//? options Veri Yapısı
+//* options genellikle dizi şeklinde verilir.
+//* Her nesnenin label özelliği, seçenek metnini belirler.
+//* Örnek: { label: 'Inception', year: 2010 }
+//* getOptionLabel: Seçenek nesnesinde gösterilecek metni belirler. Örnek: getOptionLabel={(option) => option.label}
+
+//? Ek Kullanışlı Özellikler
+//* multiple: Birden fazla seçenek seçilmesini sağlar.
+//* freeSolo: Listede bulunmayan bir metnin de girilmesine izin verir.
+//* disabled: Autocomplete alanını devre dışı bırakır.
+//* readOnly: Seçim alanının değiştirilmesini engeller.
+//* loading: Yükleme durumunu belirtir.
+//* autoHighlight: İlk eşleşen seçeneği otomatik vurgular.
+//* autoSelect: Odak kaybolduğunda vurgulanan seçeneğin seçilmesini sağlayabilir.
+//* onChange: Seçim değiştiğinde çalışır. Örnek: onChange={(event, value) => console.log(value)}
+//* value: Seçili değeri belirler; kontrollü kullanımda onChange ile birlikte kullanılır.
+//* isOptionEqualToValue: Seçenek ile seçili değerin nasıl karşılaştırılacağını belirler.
+//* filterSelectedOptions: Önceden seçilmiş seçenekleri listede gizler.
+
+//? Not
+//* Autocomplete, TextField ile birlikte kullanılarak arama yapılabilen seçim alanı oluşturur.
+//* options seçenekleri, renderInput giriş alanını belirler.
+//* Nesne dizilerinde label özelliği varsayılan olarak seçenek metni kabul edilir.
+//* Örnek: <Autocomplete options={top100Films} renderInput={(params) => <TextField {...params} label="Filmler" />} />

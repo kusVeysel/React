@@ -1,5 +1,4 @@
-import React from 'react'
-import { Button } from '@mui/material'
+﻿import { Button } from '@mui/material'
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 
 function MUIbutton() {
@@ -37,3 +36,39 @@ function MUIbutton() {
 }
 
 export default MUIbutton
+
+//? MUI Button (Buton Kullanımı)
+//* variant → 'text': Arka planı olmayan, metin şeklinde buton oluşturur.
+//* variant → 'contained': Dolgulu, arka plan rengine sahip buton oluşturur.
+//* variant → 'outlined': Kenarlıklı, şeffaf arka planlı buton oluşturur.
+
+//? Color (Buton Rengi)
+//* color → 'primary': Ana tema rengi.
+//* color → 'secondary': İkincil tema rengi.
+//* color → 'success': Başarı (genellikle yeşil).
+//* color → 'error': Hata (genellikle kırmızı).
+//* color → 'warning': Uyarı (genellikle turuncu).
+//* color → 'info': Bilgilendirme rengi.
+//* color → 'inherit': Üst elementin metin rengini devralır.
+
+//? Size (Boyut)
+//* size → 'small': Küçük buton.
+//* size → 'medium': Orta boy buton (varsayılan).
+//* size → 'large': Büyük buton.
+
+//? Icon (İkon Kullanımı)
+//* startIcon → {<ControlPointIcon />}: İkonu metnin soluna ekler.
+//* endIcon → {<ControlPointIcon />}: İkonu metnin sağına ekler.
+// → İkon kullanmak için `@mui/icons-material` paketinden ilgili ikon import edilir.
+
+//? Ek Kullanışlı Özellikler
+//* disabled: Butonu devre dışı bırakır. Örnek: <Button disabled>Pasif</Button>
+//* fullWidth: Butonun bulunduğu alanın genişliğini kaplamasını sağlar.
+//* onClick: Butona tıklandığında çalışacak fonksiyonu belirler. Örnek: <Button onClick={() → alert('Tıklandı')}>Tıkla</Button>
+//* href: Butonu bağlantı olarak kullanır. Örnek: <Button href="https://example.com">Siteye Git</Button>
+//* loading: Yükleme durumunu gösterir ve butonun tekrar kullanılmasını engeller. Desteklenen MUI sürümüne bağlıdır.
+//* sx: Butona özel CSS benzeri stiller uygular. Örnek: `<Button sx={{ borderRadius: 3, m: 1 }}>Özel Stil</Button>`
+//* disableElevation: contained butonun gölge efektini kaldırır.
+//* disableRipple: Tıklama dalgası efektini kapatır.
+
+//* Not: variant, color, size gibi özellikler Button bileşenine prop olarak verilir. Birden fazla prop aynı anda kullanılabilir. Örneğin: <Button variant="contained" color="success" size="large">Kaydet</Button>
