@@ -10,7 +10,7 @@ function MUIselect() {
     const [currency, setCurrency] = useState('');
 
     const controlCurrency = () => {
-        alert(`SeÃ§ili para birimi: ${currency}`);
+        alert(`Seçili para birimi: ${currency}`);
     }
 
     return (
@@ -18,14 +18,14 @@ function MUIselect() {
             <FormControl sx={{ width: "150px" }} variant='filled'>
                 <InputLabel>Para Birimi</InputLabel>
                 <Select value={currency} onChange={(e) => setCurrency(e.target.value)}>
-                    <MenuItem value="TRY" >TÃ¼rk LirasÄ±</MenuItem>
+                    <MenuItem value="TRY" >Türk Lirası</MenuItem>
                     <MenuItem value="USD" >Dolar</MenuItem>
                     <MenuItem value="EUR" >Euro</MenuItem>
                 </Select>
             </FormControl>
 
             <TextField label="Para Birimi" select sx={{ width: "150px", marginLeft: "20px" }} onChange={(e) => setCurrency(e.target.value)} value={currency} >
-                <MenuItem value="TRY">TÃ¼rk LirasÄ±</MenuItem>
+                <MenuItem value="TRY">Türk Lirası</MenuItem>
                 <MenuItem value="USD">Dolar</MenuItem>
                 <MenuItem value="EUR">Euro</MenuItem>
             </TextField>
@@ -41,36 +41,31 @@ export default MUIselect
 
 
 //? MUI Select (Seçim Alanı)
+
 //* Select: Açılır listeden seçenek seçilmesini sağlar.
 //* FormControl: Select ve InputLabel gibi bileşenleri birlikte düzenler.
 //* InputLabel: Seçim alanının başlığını belirler.
 //* MenuItem: Açılır listedeki seçenekleri oluşturur.
 
+
 //? Select Özellikleri
-//* value: Seçili olan değeri belirler. Örnek: value={currency}
-//* onChange: Seçim değiştiğinde çalışır. Örnek: onChange={(e) => setCurrency(e.target.value)}
-//* variant -> 'filled' / 'outlined' / 'standard': Alanın görünümünü belirler.
-//* sx: Genişlik, boşluk gibi özel stiller uygular. Örnek: sx={{ width: "150px" }}
+// → value: Seçili olan değeri belirler. Örnek: value={currency}
+// → onChange: Seçim değiştiğinde çalışır. Örnek: onChange={(e) => setCurrency(e.target.value)}
+// → variant: 'filled' / 'outlined' / 'standard': Alanın görünümünü belirler.
+// → sx: Genişlik, boşluk gibi özel stiller uygular. Örnek: sx={{ width: "150px" }}
+
 
 //? FormControl
 //* Select ve InputLabel bileşenlerini bir arada tutar ve düzenler.
-//* variant: İçindeki form alanlarının görünümünü belirler.
-//* sx: Form alanının genişliği gibi stilleri ayarlar.
+// → variant: İçindeki form alanlarının görünümünü belirler.
+// → sx: Form alanının genişliği gibi stilleri ayarlar.
+
 
 //? TextField ile Select Kullanımı
 //* TextField select: TextField bileşenini açılır seçim alanına dönüştürür.
 //* Seçenekler, TextField içerisine MenuItem bileşenleri eklenerek tanımlanır.
 //* Select ve TextField select aynı amaca farklı bileşen yapılarıyla ulaşır.
 
-//? useState (Durum Yönetimi)
-//* const [currency, setCurrency] = useState(''): Seçili para birimini tutar.
-//* setCurrency: Seçim değiştiğinde state değerini günceller.
-//* value={currency}: Seçim alanını state'e bağlar; böylece seçili değer kontrol edilir.
-
-//? Button ile Seçimi Kontrol Etme
-//* onClick: Butona tıklandığında belirtilen fonksiyonu çalıştırır.
-//* alert(`Seçili para birimi: ${currency}`): Seçilen para birimini mesaj olarak gösterir.
-//* Template literal (`...`): Metin içerisinde ${} kullanarak değişken eklemeyi sağlar.
 
 //? Ek Kullanışlı Özellikler
 //* disabled: Seçim alanını veya seçeneği devre dışı bırakır.
@@ -78,9 +73,3 @@ export default MUIselect
 //* multiple: Select üzerinde birden fazla seçim yapılmasını sağlar; value ve onChange buna göre düzenlenmelidir.
 //* displayEmpty: Boş değer için de görüntüleme yapılmasını sağlar.
 //* renderValue: Seçili değerin alanda nasıl gösterileceğini özelleştirir.
-
-//? Not
-//* Select bileşeninde value ve onChange birlikte kullanılarak kontrollü seçim yapılır.
-//* useState, kullanıcının seçimini saklar; setCurrency bu değeri günceller.
-//* FormControl + InputLabel + Select yapısı klasik kullanım, TextField select ise daha kısa alternatifidir.
-//* Örnek: <Select value={currency} onChange={(e) => setCurrency(e.target.value)}><MenuItem value="TRY">Türk Lirası</MenuItem></Select>s

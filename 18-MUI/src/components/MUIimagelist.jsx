@@ -81,8 +81,6 @@ function MUIimagelist() {
         },
     ];
 
-
-
     return (
         <>
             <ImageList sx={{ width: 500, height: 450 }}>
@@ -123,37 +121,34 @@ function MUIimagelist() {
 export default MUIimagelist
 
 //? MUI ImageList (Resim Listesi)
+
 //* ImageList: Görselleri ızgara veya farklı düzenlerde listelemeyi sağlar.
 //* ImageListItem: Listedeki her bir görsel öğesini oluşturur.
 //* sx={{ width: 500, height: 450 }}: Listenin genişliğini ve yüksekliğini belirler.
 
-//? ImageListItemBar (Görsel Bilgi Çubuğu)
-//* ImageListItemBar: Görselin üzerinde veya altında başlık ve ek bilgiler gösterir.
-//* title: Görselin başlığını belirler.
-//* subtitle: Başlığın altında gösterilecek ek bilgiyi belirler.
-//* actionIcon: Bilgi çubuğuna buton veya ikon ekler.
 
 //? ListSubheader (Liste Başlığı)
 //* ListSubheader: Görsel listesinin belirli bir bölümüne başlık ekler.
-//* component="div": Başlığın hangi HTML elementiyle oluşturulacağını belirler.
-//* cols: Öğenin kaç sütun kaplayacağını belirler.
+// → component="div": Başlığın hangi HTML elementiyle oluşturulacağını belirler.
+//→ cols: Öğenin kaç sütun kaplayacağını belirler.
+
+
+//? ImageListItemBar (Görsel Bilgi Çubuğu)
+//* ImageListItemBar: Görselin üzerinde veya altında başlık ve ek bilgiler gösterir.
+// → title: Görselin başlığını belirler.
+// → subtitle: Başlığın altında gösterilecek ek bilgiyi belirler.
+// → actionIcon: Bilgi çubuğuna buton veya ikon ekler.
+
 
 //? Görsel Özellikleri
-//* src: Görselin kaynak adresini belirler.
-//* srcSet: Farklı ekran çözünürlükleri için alternatif görsel kaynakları sunar.
-//* alt: Görsel yüklenemediğinde veya ekran okuyucularında kullanılan açıklamadır.
-//* loading="lazy": Görselin ekrana yaklaşınca yüklenmesini sağlar.
-//* fit=crop: Görselin belirtilen alana kırpılarak uyum sağlamasını sağlar.
-//* auto=format: Görsel formatının uygun şekilde sunulmasını sağlar.
-//* dpr=2: Daha yüksek piksel yoğunluğu için görsel kaynağı belirtir.
+// → src: Görselin kaynak adresini belirler.
+// → srcSet: Farklı ekran çözünürlükleri için alternatif görsel kaynakları sunar.
+// → alt: Görsel yüklenemediğinde veya ekran okuyucularında kullanılan açıklamadır.
+// → loading="lazy": Görselin ekrana yaklaşınca yüklenmesini sağlar.
+// → fit=crop: Görselin belirtilen alana kırpılarak uyum sağlamasını sağlar.
+// → auto=format: Görsel formatının uygun şekilde sunulmasını sağlar.
+// → dpr=2: Daha yüksek piksel yoğunluğu için görsel kaynağı belirtir.
 
-//? JavaScript map() ve itemData
-//* itemData: Görsellerin adres, başlık ve diğer bilgilerini tutan nesne dizisidir.
-//* map(): Dizideki her eleman için bir ImageListItem oluşturur.
-//* item.img: Görsel adresini belirtir.
-//* item.title: Görsel başlığını belirtir.
-//* item.author: Görselin sahibi veya açıklayıcı bilgisini belirtir.
-//* key={item.img}: React'ın liste elemanlarını birbirinden ayırt etmesini sağlar.
 
 //? Ek Kullanışlı Özellikler
 //* variant="standard": Standart ızgara düzenini kullanır.
@@ -165,14 +160,9 @@ export default MUIimagelist
 //* gap: Görseller arasındaki boşluğu belirler.
 //* rows ve cols: Desteklenen düzenlerde öğenin kaplayacağı satır ve sütun sayısını belirtir.
 
+
 //? IconButton ve InfoIcon
 //* IconButton: İkon içeren tıklanabilir buton oluşturur.
 //* InfoIcon: Bilgi simgesidir; @mui/icons-material paketinden import edilir.
 //* aria-label: Ekran okuyucularına butonun amacını açıklar.
 //* sx: İkonun rengini ve diğer stillerini belirler.
-
-//? Not
-//* ImageList, ImageListItem ve ImageListItemBar birlikte görsel galerileri oluşturmak için kullanılır.
-//* itemData.map() ile verilerden dinamik olarak görsel listesi oluşturulur.
-//* key özelliği, React'ın listedeki elemanları takip etmesine yardımcı olur.
-//* Örnek: <ImageList cols={3} gap={8}><ImageListItem><img src="/resim.jpg" alt="Örnek" /></ImageListItem></ImageList>
