@@ -16,3 +16,6 @@ export default App
 
 // npm install react-router-dom
 // npm i react-toastify
+
+// https://firebase.com/
+// npm install firebase
