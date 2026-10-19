@@ -1,10 +1,13 @@
 import './App.css'
+import Navbar from './components/Navbar'
+import RouterConfig from './config/RouterConfig'
 
 function App() {
 
   return (
     <>
-    
+      <RouterConfig />
+      <Navbar/>
     </>
   )
 }
@@ -12,3 +15,4 @@ function App() {
 export default App
 
 // npm install react-router-dom
+// npm i react-toastify
