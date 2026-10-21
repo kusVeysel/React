@@ -25,13 +25,10 @@ function Auth() {
                     navigate("/");
                 }, 3000);
             }
-
         } catch (error) {
             toast.error(error.message);
         }
-
     }
-
 
     const login = async () => {
         try {
@@ -43,13 +40,10 @@ function Auth() {
                     navigate("/");
                 }, 3000)
             }
-
         } catch (error) {
             toast.error("Giriş Yapılamadı\n" + error.message);
         }
-
     }
-
 
     const register = async () => {
         try {
@@ -60,7 +54,6 @@ function Auth() {
                 setEmail('');
                 setPassword('');
             }
-
         } catch (error) {
             toast.error("Kayıt Yapılamadı\n" + error.message);
         }
