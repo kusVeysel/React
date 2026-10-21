@@ -36,48 +36,49 @@ Bu depo, React ekosistemindeki temel ve ileri seviye konuları düzenli bir klas
 ## 🗂️ Konular ve Klasör Yapısı
 
   ------------------------------------------------------------------------------
-  Klasör                         Konu                    İçerik
+  |Klasör                         |Konu                   | İçerik
   ------------------------------ ----------------------- -----------------------
-  `01-Giris`                     React'e giriş           Temel yapı ve ilk bileşenler
+|:---:|:---:|:---:|
+  |`01-Giris`                     |React'e giriş           |Temel yapı ve ilk bileşenler|
 
-  `02-ComponentYapisi`           Component yapısı        Bileşen oluşturma ve yeniden kullanılabilirlik
+  |`02-ComponentYapisi`           |Component yapısı        |Bileşen oluşturma ve yeniden kullanılabilirlik|
 
-  `03-Props`                     Props                   Bileşenlere veri aktarma
+  |`03-Props`                     |Props                   |Bileşenlere veri aktarma|
 
-  `04-UseState`                  `useState`              Bileşen durumunu yönetme
+  |`04-UseState`                  |`useState`              |Bileşen durumunu yönetme|
 
-  `05-UseEffect`                 `useEffect`             Yan etkiler ve yaşam döngüsüyle ilişkili işlemler
+  |`05-UseEffect`                 |`useEffect`             |Yan etkiler ve yaşam döngüsüyle ilişkili işlemler|
 
-  `06-Debug`                     Debug                   Hataları inceleme ve giderme
+  |`06-Debug`                     |Debug                   |Hataları inceleme ve giderme|
 
-  `07-CourseApp`                 Course App              Öğrenilen konuları bir araya getiren uygulama
+  |`07-CourseApp`                 |Course App              |Öğrenilen konuları bir araya getiren uygulama|
 
-  `08-ApiUsing`                  API kullanımı           Sunucudan veri alma ve asenkron işlemler
+  |`08-ApiUsing`                  |API kullanımı           |Sunucudan veri alma ve asenkron işlemler|
 
-  `09-DovizKuruUygulamasi`       Döviz kuru uygulaması   Döviz verileriyle çalışan örnek uygulama
+  |`09-DovizKuruUygulamasi`       |Döviz kuru uygulaması   |Döviz verileriyle çalışan örnek uygulama|
 
-  `10-TodoUygulamasi`            Todo uygulaması         Görevleri listeleme ve yönetme
+  |`10-TodoUygulamasi`            |Todo uygulaması         |Görevleri listeleme ve yönetme|
 
-  `11-Redux`                     Redux                   Merkezi state yönetimine giriş
+  |`11-Redux`                     |Redux                   |Merkezi state yönetimine giriş|
 
-  `12-RouterDom`                 React Router DOM        Sayfalar arasında yönlendirme
+  |`12-RouterDom`                 |React Router DOM        |Sayfalar arasında yönlendirme|
 
-  `13-E-TicaretUygulamasi`       E-ticaret uygulaması    Uygulama ölçeğinde frontend örneği
+  |`13-E-TicaretUygulamasi`       |E-ticaret uygulaması    |Uygulama ölçeğinde frontend örneği|
 
-  `14-TypeScript`                TypeScript              Tipler ve TypeScript temelleri
+  |`14-TypeScript`                |TypeScript              |Tipler ve TypeScript temelleri|
 
-  `15-TypeScript-ReduxToolKit`   TypeScript + Redux      Tip güvenli state yönetimi
+  |`15-TypeScript-ReduxToolKit`   |TypeScript + Redux      |Tip güvenli state yönetimi|
 
-  `16-CustomHooks`               Custom Hooks            Tekrar kullanılabilir React mantığı
+  |`16-CustomHooks`               |Custom Hooks            |Tekrar kullanılabilir React mantığı|
 
-  `17-Formik-Yup`                Formik + Yup            Form yönetimi ve veri doğrulama
+  |`17-Formik-Yup`                |Formik + Yup            |Form yönetimi ve veri doğrulama|
 
-  `18-MUI`                       Material UI (MUI)       Hazır arayüz bileşenleriyle UI geliştirme
+  |`18-MUI`                       |Material UI (MUI)       |Hazır arayüz bileşenleriyle UI geliştirme|
 
-  `19-Firebase`                  Firebase                Firebase servisleriyle çalışma
+  |`19-Firebase`                  |Firebase                |Firebase servisleriyle çalışma|
   ------------------------------------------------------------------------------
 
-> ![INFO]
+> [!INFO]
 > **Not:** Klasör açıklamaları klasör adlarına göre hazırlanmıştır. Her klasördeki örneklerin ayrıntıları, ilgili kod dosyaları incelenerek görülebilir.
 
 ## 🧰 Gereksinimler
