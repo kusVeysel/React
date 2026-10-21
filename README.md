@@ -1,16 +1,10 @@
-::: {align="center"}
 # ⚛️ React Öğrenme Yolculuğu
 
 **Temel kavramlardan modern React araçlarına uzanan uygulamalı öğrenme deposu**
 
 React, bileşen mimarisi, durum yönetimi, yönlendirme, API kullanımı ve öğrenmek için hazırlanmıştır. modern frontend araçlarını küçük örnekler ve uygulamalar üzerinden
 
-![React](https://img.shields.io/badge/React-Öğrenme%20Projesi-61DAFB?logo=react&logoColor=20232A&style=for-the-badge)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=20232A&style=for-the-badge)
-![TypeScript](https://img.shields.io/badge/TypeScript-Konular-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
-:::
-
-------------------------------------------------------------------------
+---
 
 ## 📌 İçindekiler
 
@@ -83,6 +77,7 @@ Bu depo, React ekosistemindeki temel ve ileri seviye konuları düzenli bir klas
   `19-Firebase`                  Firebase                Firebase servisleriyle çalışma
   ------------------------------------------------------------------------------
 
+> ![INFO]
 > **Not:** Klasör açıklamaları klasör adlarına göre hazırlanmıştır. Her klasördeki örneklerin ayrıntıları, ilgili kod dosyaları incelenerek görülebilir.
 
 ## 🧰 Gereksinimler
@@ -190,8 +185,6 @@ Bir konuya geçmeden önce örnekleri çalıştırmanız, kodu değiştirerek so
 -   Gizli anahtarları ve özel erişim bilgilerini Git deposuna eklemeyin.
 -   Öğrendiğiniz kavramları küçük bir kişisel projede tekrar uygulayın.
 
-------------------------------------------------------------------------
+---
 
-::: {align="center"}
-**React öğrenirken adım adım ilerleyin, deneyin ve üretin.** 🚀
-:::
+**Veysel KUŞ**
