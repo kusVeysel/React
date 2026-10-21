@@ -6,16 +6,16 @@ React, bileşen mimarisi, durum yönetimi, yönlendirme, API kullanımı ve öğ
 
 ---
 
-## 📌 İçindekiler
+## 📌 İçindekiler 
 
--   [Proje Hakkında](#-proje-hakkında)
--   [Konular ve Klasör Yapısı](#-konular-ve-klasör-yapısı)
--   [Gereksinimler](#-gereksinimler)
--   [Projeyi Kurma](#-projeyi-kurma)
--   [Projeyi Çalıştırma](#-projeyi-çalıştırma)
--   [Üretim Sürümü Oluşturma](#-üretim-sürümü-oluşturma)
--   [Önerilen Öğrenme Sırası](#-önerilen-öğrenme-sırası)
--   [Çalışma Önerileri](#-çalışma-önerileri)
+- [Proje Hakkında](#-proje-hakkında)
+- [Konular ve Klasör Yapısı](#konularveklasoryapisi)
+- [Gereksinimler](#-gereksinimler)
+- [Projeyi Kurma](#-projeyi-kurma)
+- [Projeyi Çalıştırma](#projecalistirma)
+- [Üretim Sürümü Oluşturma](#UretimSurumuOlusturma)
+- [Önerilen Öğrenme Sırası](#-önerilen-öğrenme-sırası)
+- [Çalışma Önerileri](#-çalışma-önerileri)
 
 ## 🎯 Proje Hakkında
 
@@ -33,7 +33,7 @@ Bu depo, React ekosistemindeki temel ve ileri seviye konuları düzenli bir klas
 - Form yönetimi ve doğrulama
 - Firebase ve Material UI gibi araçlarla çalışma
 
-## 🗂️ Konular ve Klasör Yapısı
+<h3 id="konularveklasoryapisi">🗂️ Konular ve Klasör Yapısı</h3>
 
 |Klasör                         |Konu                   | İçerik|
 |:---:                          |:---:                  |:---:|
@@ -111,7 +111,7 @@ npm install
 
 Bu komut, `package.json` içinde tanımlanmış bağımlılıkları yükler. Kurulum tamamlandıktan sonra proje çalıştırılmaya hazır olur.
 
-## ▶️ Projeyi Çalıştırma
+<h3 id="projecalistirma">▶️ Projeyi Çalıştırma</h3>
 
 Önce `package.json` dosyasındaki `scripts` bölümünü kontrol edin. Proje Vite kullanıyorsa geliştirme sunucusunu şu komutla başlatabilirsiniz:
 
@@ -125,7 +125,7 @@ Terminalde gösterilen yerel adresi (çoğunlukla `http://localhost:5173`) taray
 
 `package.json` dosyasındaki script tanımlarını kontrol edin. Proje Create React App gibi farklı bir yapılandırma kullanıyorsa başlatma komutu farklı olabilir. Tanımlı olmayan bir script'i çalıştırmaya çalışmak `Missing script` hatasına neden olur.
 
-## 🏗️ Üretim Sürümü Oluşturma
+<h3 id="UretimSurumuOlusturma">🏗️ Üretim Sürümü Oluşturma</h3>
 
 Vite tabanlı projelerde üretim için optimize edilmiş dosyaları oluşturun:
 
