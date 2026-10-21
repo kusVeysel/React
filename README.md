@@ -35,9 +35,7 @@ Bu depo, React ekosistemindeki temel ve ileri seviye konuları düzenli bir klas
 
 ## 🗂️ Konular ve Klasör Yapısı
 
-  ------------------------------------------------------------------------------
-  |Klasör                         |Konu                   | İçerik
-  ------------------------------ ----------------------- -----------------------
+  |Klasör                         |Konu                   | İçerik|
 |:---:|:---:|:---:|
   |`01-Giris`                     |React'e giriş           |Temel yapı ve ilk bileşenler|
 
