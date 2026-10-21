@@ -1,15 +1,37 @@
 import React from 'react'
 import { useState } from 'react'
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 import { toast } from 'react-toastify'
 import { auth } from '../Firebase'
 import { useNavigate } from 'react-router-dom'
+
+const provider = new GoogleAuthProvider();
 
 function Auth() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+
+    const loginWithGoogle = async () => {
+        try {
+            const response = await signInWithPopup(auth, provider);
+            // const credential = GoogleAuthProvider.credentialFromResult(response);
+            // const token = credential.accessToken;
+            const user = response.user;
+            if (user) {
+                toast.success("Google ile giriş işlemi başarılı");
+                setTimeout(() => {
+                    navigate("/");
+                }, 3000);
+            }
+
+        } catch (error) {
+            toast.error(error.message);
+        }
+
+    }
+
 
     const login = async () => {
         try {
@@ -52,7 +74,7 @@ function Auth() {
                 <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder='Şifre giriniz' />
             </div>
             <div className='button-div'>
-                <button className='google-button'>Google İle Giriş Yap</button>
+                <button className='google-button' onClick={loginWithGoogle} >Google İle Giriş Yap</button>
                 <button className='login-button' onClick={login} >Giriş Yap</button>
                 <button className='register-button' onClick={register}>Kayıt ol</button>
             </div>
