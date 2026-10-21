@@ -35,30 +35,31 @@ Bu depo, React ekosistemindeki temel ve ileri seviye konuları düzenli bir klas
 
 ## 🗂️ Konular ve Klasör Yapısı
 
-  |Klasör                         |Konu                   | İçerik|
-|:---:|:---:|:---:|
-  |`01-Giris`                     |React'e giriş           |Temel yapı ve ilk bileşenler|
-  |`02-ComponentYapisi`           |Component yapısı        |Bileşen oluşturma ve yeniden kullanılabilirlik|
-  |`03-Props`                     |Props                   |Bileşenlere veri aktarma|
-  |`04-UseState`                  |`useState`              |Bileşen durumunu yönetme|
-  |`05-UseEffect`                 |`useEffect`             |Yan etkiler ve yaşam döngüsüyle ilişkili işlemler|
-  |`06-Debug`                     |Debug                   |Hataları inceleme ve giderme|
-  |`07-CourseApp`                 |Course App              |Öğrenilen konuları bir araya getiren uygulama|
-  |`08-ApiUsing`                  |API kullanımı           |Sunucudan veri alma ve asenkron işlemler|
-  |`09-DovizKuruUygulamasi`       |Döviz kuru uygulaması   |Döviz verileriyle çalışan örnek uygulama|
-  |`10-TodoUygulamasi`            |Todo uygulaması         |Görevleri listeleme ve yönetme|
-  |`11-Redux`                     |Redux                   |Merkezi state yönetimine giriş|
-  |`12-RouterDom`                 |React Router DOM        |Sayfalar arasında yönlendirme|
-  |`13-E-TicaretUygulamasi`       |E-ticaret uygulaması    |Uygulama ölçeğinde frontend örneği|
-  |`14-TypeScript`                |TypeScript              |Tipler ve TypeScript temelleri|
-  |`15-TypeScript-ReduxToolKit`   |TypeScript + Redux      |Tip güvenli state yönetimi|
-  |`16-CustomHooks`               |Custom Hooks            |Tekrar kullanılabilir React mantığı|
-  |`17-Formik-Yup`                |Formik + Yup            |Form yönetimi ve veri doğrulama|
-  |`18-MUI`                       |Material UI (MUI)       |Hazır arayüz bileşenleriyle UI geliştirme|
-  |`19-Firebase`                  |Firebase                |Firebase servisleriyle çalışma|
-  ------------------------------------------------------------------------------
+|Klasör                         |Konu                   | İçerik|
+|:---:                          |:---:                  |:---:|
+|`01-Giris`                     |React'e giriş          |Temel yapı ve ilk bileşenler|
+|`02-ComponentYapisi`           |Component yapısı       |Bileşen oluşturma ve yeniden kullanılabilirlik|
+|`03-Props`                     |Props                  |Bileşenlere veri aktarma|
+|`04-UseState`                  |`useState`             |Bileşen durumunu yönetme|
+|`05-UseEffect`                 |`useEffect`            |Yan etkiler ve yaşam döngüsüyle ilişkili işlemler|
+|`06-Debug`                     |Debug                  |Hataları inceleme ve giderme|
+|`07-CourseApp`                 |Course App             |Öğrenilen konuları bir araya getiren uygulama|
+|`08-ApiUsing`                  |API kullanımı          |Sunucudan veri alma ve asenkron işlemler|
+|`09-DovizKuruUygulamasi`       |Döviz kuru uygulaması  |Döviz verileriyle çalışan örnek uygulama|
+|`10-TodoUygulamasi`            |Todo uygulaması        |Görevleri listeleme ve yönetme|
+|`11-Redux`                     |Redux                  |Merkezi state yönetimine giriş|
+|`12-RouterDom`                 |React Router DOM       |Sayfalar arasında yönlendirme|
+|`13-E-TicaretUygulamasi`       |E-ticaret uygulaması   |Uygulama ölçeğinde frontend örneği|
+|`14-TypeScript`                |TypeScript             |Tipler ve TypeScript temelleri|
+|`15-TypeScript-ReduxToolKit`   |TypeScript + Redux     |Tip güvenli state yönetimi|
+|`16-CustomHooks`               |Custom Hooks           |Tekrar kullanılabilir React mantığı|
+|`17-Formik-Yup`                |Formik + Yup           |Form yönetimi ve veri doğrulama|
+|`18-MUI`                       |Material UI (MUI)      |Hazır arayüz bileşenleriyle UI geliştirme|
+|`19-Firebase`                  |Firebase               |Firebase servisleriyle çalışma|
+    
+---
 
-> [!INFO]
+> [!NOTE]
 > **Not:** Klasör açıklamaları klasör adlarına göre hazırlanmıştır. Her klasördeki örneklerin ayrıntıları, ilgili kod dosyaları incelenerek görülebilir.
 
 ## 🧰 Gereksinimler
@@ -155,16 +156,17 @@ Konular, klasör numaralarına göre ilerleyecek şekilde düzenlenmiştir. Öze
     Custom Hooks
 6.  **Arayüz ve servisler:** Formik-Yup, Material UI ve Firebase
 
-Bir konuya geçmeden önce örnekleri çalıştırmanız, kodu değiştirerek sonucu gözlemlemeniz ve öğrendiklerinizi küçük bir örnekle tekrar etmeniz önerilir.
+> [!WARNING]
+> Bir konuya geçmeden önce örnekleri çalıştırmanız, kodu değiştirerek sonucu gözlemlemeniz ve öğrendiklerinizi küçük bir örnekle tekrar etmeniz önerilir.
 
 ## 💡 Çalışma Önerileri
 
--  Her klasörü ayrı bir konu olarak ele alın; kodu yalnızca kopyalamak yerine anlamaya çalışın.
--   Değişkenleri ve bileşenleri değiştirerek uygulamanın davranışını gözlemleyin.
--   Tarayıcının geliştirici araçlarını ve terminal hata mesajlarını inceleyin.
--   API veya Firebase kullanan örneklerde gerekli yapılandırma bilgilerini ilgili klasörün kodundan ve dokümantasyonundan kontrol edin.
--   Gizli anahtarları ve özel erişim bilgilerini Git deposuna eklemeyin.
--   Öğrendiğiniz kavramları küçük bir kişisel projede tekrar uygulayın.
+- Her klasörü ayrı bir konu olarak ele alın; kodu yalnızca kopyalamak yerine anlamaya çalışın.
+- Değişkenleri ve bileşenleri değiştirerek uygulamanın davranışını gözlemleyin.
+- Tarayıcının geliştirici araçlarını ve terminal hata mesajlarını inceleyin.
+- API veya Firebase kullanan örneklerde gerekli yapılandırma bilgilerini ilgili klasörün kodundan ve dokümantasyonundan kontrol edin.
+- Gizli anahtarları ve özel erişim bilgilerini Git deposuna eklemeyin.
+- Öğrendiğiniz kavramları küçük bir kişisel projede tekrar uygulayın.
 
 ---
 
